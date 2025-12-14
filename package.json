@@ -1,0 +1,16 @@
+{
+  "name": "emerson-design-tokens",
+  "version": "1.0.0",
+  "description": "Design tokens for Emerson",
+  "main": "tokens.json",
+  "files": [
+    "tokens.json"
+  ],
+  "keywords": [
+    "design-tokens",
+    "design-system",
+    "emerson"
+  ],
+  "author": "Emerson",
+  "license": "MIT"
+}
