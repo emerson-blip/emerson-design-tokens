@@ -1,0 +1,1700 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emerson Agency — Complete Brand Specimen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* Layer 1: Core Brand */
+      --orange: #e7602a;
+      --charcoal: #2a2d31;
+      --white: #ffffff;
+      
+      /* Layer 2: Brand Support */
+      --tobacco: #9a7b4f;
+      --slate-bronze: #7a6d5d;
+      --oxblood: #6b3a3a;
+      
+      /* Layer 3: Taupe Foundation */
+      --taupe-50: #f7f5f3;
+      --taupe-100: #ede8e3;
+      --taupe-200: #ddd5cd;
+      --taupe-500: #9d8b7d;
+      --taupe-700: #6d5f52;
+      
+      /* Layer 4a: Retro Warmth */
+      --retro-mustard: #d4a03c;
+      --retro-rust: #b8593b;
+      --retro-olive: #6b7c4c;
+      --retro-teal: #3d6b6b;
+      --retro-burgundy: #7a3b4c;
+      --retro-gold: #c9a961;
+      --retro-sage: #8b9b7a;
+      --retro-terracotta: #c67b5c;
+      
+      /* Layer 4b: Soft Palette */
+      --soft-blush: #e8d5d0;
+      --soft-sky: #d0dde8;
+      --soft-mint: #d0e8d5;
+      --soft-lavender: #ddd0e8;
+      --soft-peach: #e8ddd0;
+      --soft-seafoam: #d0e8e5;
+      --soft-rose: #e8d0dd;
+      --soft-cream: #e8e5d0;
+      
+      /* Typography */
+      --font-heading: 'Work Sans', sans-serif;
+      --font-body: 'IBM Plex Sans', sans-serif;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: var(--font-body);
+      background: var(--white);
+      color: var(--charcoal);
+      line-height: 1.6;
+    }
+    
+    /* ========================================
+       SECTION LAYOUTS
+       ======================================== */
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+    
+    .container-wide {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+    
+    .container-narrow {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+    
+    .section {
+      padding: 80px 0;
+    }
+    
+    .section-label {
+      font-family: var(--font-heading);
+      font-size: 11px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--taupe-500);
+      margin-bottom: 16px;
+    }
+    
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: 32px;
+      font-weight: 300;
+      color: var(--charcoal);
+      margin-bottom: 24px;
+    }
+    
+    .section-intro {
+      font-size: 18px;
+      line-height: 1.7;
+      color: var(--taupe-700);
+      max-width: 600px;
+      margin-bottom: 48px;
+    }
+    
+    /* ========================================
+       HERO SECTION
+       ======================================== */
+    
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 80px 0;
+      background: var(--white);
+    }
+    
+    .hero-overline {
+      font-family: var(--font-heading);
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--orange);
+      margin-bottom: 24px;
+    }
+    
+    .hero-title {
+      font-family: var(--font-heading);
+      font-size: 72px;
+      font-weight: 300;
+      line-height: 1.1;
+      color: var(--charcoal);
+      margin-bottom: 32px;
+      max-width: 900px;
+    }
+    
+    .hero-subtitle {
+      font-family: var(--font-body);
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: var(--taupe-700);
+      max-width: 600px;
+      margin-bottom: 48px;
+    }
+    
+    .hero-meta {
+      font-family: var(--font-body);
+      font-size: 14px;
+      color: var(--taupe-500);
+    }
+    
+    .hero-meta span {
+      color: var(--charcoal);
+      font-weight: 500;
+    }
+    
+    /* ========================================
+       TYPOGRAPHY SHOWCASE
+       ======================================== */
+    
+    .type-specimen {
+      padding: 80px 0;
+      background: var(--taupe-50);
+    }
+    
+    .type-sample {
+      margin-bottom: 64px;
+    }
+    
+    .type-sample:last-child {
+      margin-bottom: 0;
+    }
+    
+    .type-meta {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    
+    .type-tag {
+      font-family: var(--font-heading);
+      font-size: 10px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 4px 10px;
+      border-radius: 4px;
+      background: var(--taupe-200);
+      color: var(--taupe-700);
+    }
+    
+    .type-tag.primary {
+      background: var(--charcoal);
+      color: var(--white);
+    }
+    
+    /* Heading Styles */
+    .display-hero {
+      font-family: var(--font-heading);
+      font-size: 72px;
+      font-weight: 300;
+      line-height: 1.1;
+      color: var(--charcoal);
+    }
+    
+    .display-h1 {
+      font-family: var(--font-heading);
+      font-size: 48px;
+      font-weight: 300;
+      line-height: 1.2;
+      color: var(--charcoal);
+    }
+    
+    .display-h2 {
+      font-family: var(--font-heading);
+      font-size: 36px;
+      font-weight: 300;
+      line-height: 1.25;
+      color: var(--charcoal);
+    }
+    
+    .display-h3 {
+      font-family: var(--font-heading);
+      font-size: 28px;
+      font-weight: 300;
+      line-height: 1.3;
+      color: var(--charcoal);
+    }
+    
+    .display-h4 {
+      font-family: var(--font-heading);
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 1.35;
+      color: var(--charcoal);
+    }
+    
+    /* Body Styles */
+    .body-large {
+      font-family: var(--font-body);
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.7;
+      color: var(--charcoal);
+    }
+    
+    .body-regular {
+      font-family: var(--font-body);
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 1.7;
+      color: var(--charcoal);
+    }
+    
+    .body-small {
+      font-family: var(--font-body);
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.6;
+      color: var(--charcoal);
+    }
+    
+    .caption {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.5;
+      color: var(--taupe-700);
+    }
+    
+    .label {
+      font-family: var(--font-heading);
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--taupe-500);
+    }
+    
+    /* ========================================
+       COLOR SYSTEM
+       ======================================== */
+    
+    .color-section {
+      padding: 80px 0;
+    }
+    
+    .color-layer {
+      margin-bottom: 64px;
+    }
+    
+    .color-layer:last-child {
+      margin-bottom: 0;
+    }
+    
+    .color-layer-header {
+      margin-bottom: 24px;
+    }
+    
+    .color-layer-title {
+      font-family: var(--font-heading);
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--taupe-500);
+      margin-bottom: 4px;
+    }
+    
+    .color-layer-desc {
+      font-size: 15px;
+      color: var(--taupe-700);
+    }
+    
+    .color-grid {
+      display: grid;
+      gap: 16px;
+    }
+    
+    .color-grid-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .color-grid-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .color-grid-5 {
+      grid-template-columns: repeat(5, 1fr);
+    }
+    
+    .color-grid-8 {
+      grid-template-columns: repeat(8, 1fr);
+    }
+    
+    .color-card {
+      border-radius: 12px;
+      overflow: hidden;
+      background: var(--white);
+      box-shadow: 0 2px 12px rgba(42,45,49,0.08);
+    }
+    
+    .color-card-swatch {
+      height: 120px;
+      display: flex;
+      align-items: flex-end;
+      padding: 16px;
+    }
+    
+    .color-card-swatch.large {
+      height: 180px;
+    }
+    
+    .color-card-swatch.small {
+      height: 80px;
+    }
+    
+    .color-card-info {
+      padding: 16px;
+    }
+    
+    .color-card-name {
+      font-family: var(--font-heading);
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--charcoal);
+      margin-bottom: 2px;
+    }
+    
+    .color-card-hex {
+      font-family: 'SF Mono', Monaco, monospace;
+      font-size: 12px;
+      color: var(--taupe-500);
+      margin-bottom: 8px;
+    }
+    
+    .color-card-usage {
+      font-size: 13px;
+      color: var(--taupe-700);
+      line-height: 1.4;
+    }
+    
+    /* Compact color strip */
+    .color-strip {
+      display: flex;
+      border-radius: 8px;
+      overflow: hidden;
+      height: 64px;
+    }
+    
+    .color-strip-item {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'SF Mono', Monaco, monospace;
+      font-size: 10px;
+      color: white;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    }
+    
+    .color-strip-item.light-text {
+      color: var(--charcoal);
+      text-shadow: none;
+    }
+    
+    /* ========================================
+       QUOTE BLOCKS
+       ======================================== */
+    
+    .quote-block {
+      padding: 48px;
+      border-radius: 16px;
+      margin: 32px 0;
+    }
+    
+    .quote-block.bg-white {
+      background: var(--white);
+      box-shadow: 0 4px 24px rgba(42,45,49,0.08);
+    }
+    
+    .quote-block.bg-taupe {
+      background: var(--taupe-50);
+    }
+    
+    .quote-block.bg-charcoal {
+      background: var(--charcoal);
+    }
+    
+    .quote-block.bg-charcoal * {
+      color: var(--white);
+    }
+    
+    .quote-block.bg-charcoal .caption {
+      color: var(--taupe-200);
+    }
+    
+    .quote-text {
+      font-family: var(--font-body);
+      font-size: 24px;
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.6;
+      color: var(--charcoal);
+      margin-bottom: 24px;
+    }
+    
+    .quote-text.large {
+      font-size: 32px;
+      line-height: 1.5;
+    }
+    
+    .quote-attribution {
+      font-family: var(--font-heading);
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--taupe-700);
+    }
+    
+    .quote-source {
+      font-family: var(--font-body);
+      font-size: 13px;
+      color: var(--taupe-500);
+      margin-top: 4px;
+    }
+    
+    /* Pull quote with border */
+    .pull-quote {
+      padding-left: 32px;
+      border-left: 4px solid var(--taupe-200);
+      margin: 40px 0;
+    }
+    
+    .pull-quote.accent-orange {
+      border-left-color: var(--orange);
+    }
+    
+    .pull-quote.accent-tobacco {
+      border-left-color: var(--tobacco);
+    }
+    
+    .pull-quote.accent-oxblood {
+      border-left-color: var(--oxblood);
+    }
+    
+    .pull-quote-text {
+      font-family: var(--font-body);
+      font-size: 20px;
+      font-style: italic;
+      line-height: 1.6;
+      color: var(--charcoal);
+      margin-bottom: 16px;
+    }
+    
+    /* ========================================
+       ARTICLE LAYOUTS
+       ======================================== */
+    
+    .article {
+      padding: 80px 0;
+    }
+    
+    .article-header {
+      margin-bottom: 48px;
+    }
+    
+    .article-overline {
+      font-family: var(--font-heading);
+      font-size: 11px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--taupe-500);
+      margin-bottom: 12px;
+    }
+    
+    .article-title {
+      font-family: var(--font-heading);
+      font-size: 42px;
+      font-weight: 300;
+      line-height: 1.2;
+      color: var(--charcoal);
+      margin-bottom: 20px;
+    }
+    
+    .article-lead {
+      font-family: var(--font-body);
+      font-size: 20px;
+      line-height: 1.7;
+      color: var(--taupe-700);
+    }
+    
+    .article-body p {
+      font-size: 17px;
+      line-height: 1.8;
+      color: var(--charcoal);
+      margin-bottom: 24px;
+    }
+    
+    .article-body h2 {
+      font-family: var(--font-heading);
+      font-size: 28px;
+      font-weight: 300;
+      color: var(--charcoal);
+      margin-top: 48px;
+      margin-bottom: 20px;
+    }
+    
+    .article-body h3 {
+      font-family: var(--font-heading);
+      font-size: 22px;
+      font-weight: 400;
+      color: var(--charcoal);
+      margin-top: 40px;
+      margin-bottom: 16px;
+    }
+    
+    .article-body a {
+      color: var(--charcoal);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: var(--taupe-500);
+    }
+    
+    .article-body a:hover {
+      text-decoration-color: var(--charcoal);
+    }
+    
+    .article-body a.signature {
+      color: var(--orange);
+      text-decoration-color: var(--orange);
+    }
+    
+    .article-body strong {
+      font-weight: 600;
+    }
+    
+    .article-body em {
+      font-style: italic;
+    }
+    
+    .article-body ul, 
+    .article-body ol {
+      margin: 24px 0;
+      padding-left: 24px;
+    }
+    
+    .article-body li {
+      font-size: 17px;
+      line-height: 1.7;
+      margin-bottom: 12px;
+    }
+    
+    /* ========================================
+       CARD COMPONENTS
+       ======================================== */
+    
+    .cards-section {
+      padding: 80px 0;
+      background: var(--taupe-50);
+    }
+    
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    
+    .card {
+      background: var(--white);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 2px 16px rgba(42,45,49,0.06);
+      transition: box-shadow 200ms ease, transform 200ms ease;
+    }
+    
+    .card:hover {
+      box-shadow: 0 8px 32px rgba(42,45,49,0.12);
+      transform: translateY(-2px);
+    }
+    
+    .card-image {
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .card-content {
+      padding: 24px;
+    }
+    
+    .card-label {
+      font-family: var(--font-heading);
+      font-size: 11px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 8px;
+    }
+    
+    .card-title {
+      font-family: var(--font-heading);
+      font-size: 20px;
+      font-weight: 400;
+      color: var(--charcoal);
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+    
+    .card-excerpt {
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--taupe-700);
+    }
+    
+    /* Card accent variations */
+    .card.accent-tobacco .card-label { color: var(--tobacco); }
+    .card.accent-slate .card-label { color: var(--slate-bronze); }
+    .card.accent-oxblood .card-label { color: var(--oxblood); }
+    .card.accent-orange .card-label { color: var(--orange); }
+    
+    /* ========================================
+       ESSAY COMPONENT
+       ======================================== */
+    
+    .essay-section {
+      padding: 100px 0;
+      background: var(--charcoal);
+    }
+    
+    .essay-section * {
+      color: var(--white);
+    }
+    
+    .essay-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 64px;
+      align-items: start;
+    }
+    
+    .essay-sidebar {
+      position: sticky;
+      top: 48px;
+    }
+    
+    .essay-label {
+      font-family: var(--font-heading);
+      font-size: 11px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--orange);
+      margin-bottom: 16px;
+    }
+    
+    .essay-sidebar-title {
+      font-family: var(--font-heading);
+      font-size: 32px;
+      font-weight: 300;
+      line-height: 1.25;
+      margin-bottom: 24px;
+    }
+    
+    .essay-sidebar-meta {
+      font-size: 14px;
+      color: var(--taupe-200);
+      line-height: 1.6;
+    }
+    
+    .essay-content p {
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: 28px;
+      color: var(--taupe-100);
+    }
+    
+    .essay-content p:first-of-type {
+      font-size: 22px;
+      line-height: 1.7;
+      color: var(--white);
+    }
+    
+    .essay-content .highlight {
+      color: var(--orange);
+      font-weight: 500;
+    }
+    
+    /* ========================================
+       WORKSHOP / FRAMEWORK COLORS
+       ======================================== */
+    
+    .workshop-section {
+      padding: 80px 0;
+    }
+    
+    .framework-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    
+    .framework-card {
+      border-radius: 12px;
+      padding: 24px;
+      text-align: center;
+    }
+    
+    .framework-card.light-text {
+      color: var(--white);
+    }
+    
+    .framework-number {
+      font-family: var(--font-heading);
+      font-size: 48px;
+      font-weight: 300;
+      margin-bottom: 8px;
+      opacity: 0.9;
+    }
+    
+    .framework-title {
+      font-family: var(--font-heading);
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+    
+    .framework-desc {
+      font-size: 13px;
+      opacity: 0.8;
+      line-height: 1.4;
+    }
+    
+    /* ========================================
+       BUTTONS
+       ======================================== */
+    
+    .buttons-section {
+      padding: 80px 0;
+      background: var(--taupe-50);
+    }
+    
+    .button-row {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 32px;
+    }
+    
+    .btn {
+      font-family: var(--font-heading);
+      font-size: 15px;
+      font-weight: 400;
+      padding: 14px 28px;
+      border-radius: 8px;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: all 150ms ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    .btn-primary {
+      background: var(--charcoal);
+      color: var(--white);
+    }
+    
+    .btn-primary:hover {
+      background: var(--taupe-700);
+    }
+    
+    .btn-signature {
+      background: var(--orange);
+      color: var(--white);
+    }
+    
+    .btn-signature:hover {
+      background: #d4561f;
+    }
+    
+    .btn-secondary {
+      background: transparent;
+      border-color: var(--charcoal);
+      color: var(--charcoal);
+    }
+    
+    .btn-secondary:hover {
+      background: var(--charcoal);
+      color: var(--white);
+    }
+    
+    .btn-ghost {
+      background: transparent;
+      color: var(--charcoal);
+      border-color: transparent;
+    }
+    
+    .btn-ghost:hover {
+      background: var(--taupe-100);
+    }
+    
+    /* Brand support button variants */
+    .btn-tobacco {
+      background: var(--tobacco);
+      color: var(--white);
+    }
+    
+    .btn-slate {
+      background: var(--slate-bronze);
+      color: var(--white);
+    }
+    
+    .btn-oxblood {
+      background: var(--oxblood);
+      color: var(--white);
+    }
+    
+    /* ========================================
+       FOOTER
+       ======================================== */
+    
+    .footer {
+      padding: 80px 0;
+      background: var(--charcoal);
+      color: var(--white);
+    }
+    
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 48px;
+    }
+    
+    .footer-brand {
+      max-width: 300px;
+    }
+    
+    .footer-logo {
+      font-family: var(--font-heading);
+      font-size: 24px;
+      font-weight: 300;
+      margin-bottom: 16px;
+    }
+    
+    .footer-tagline {
+      font-size: 15px;
+      color: var(--taupe-200);
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+    
+    .footer-quote {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-style: italic;
+      color: var(--taupe-500);
+      line-height: 1.6;
+    }
+    
+    .footer-col-title {
+      font-family: var(--font-heading);
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--taupe-500);
+      margin-bottom: 20px;
+    }
+    
+    .footer-links {
+      list-style: none;
+    }
+    
+    .footer-links li {
+      margin-bottom: 12px;
+    }
+    
+    .footer-links a {
+      font-size: 15px;
+      color: var(--taupe-200);
+      text-decoration: none;
+      transition: color 150ms ease;
+    }
+    
+    .footer-links a:hover {
+      color: var(--white);
+    }
+    
+    .footer-bottom {
+      margin-top: 64px;
+      padding-top: 32px;
+      border-top: 1px solid var(--taupe-700);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .footer-copyright {
+      font-size: 13px;
+      color: var(--taupe-500);
+    }
+    
+    .footer-version {
+      font-family: 'SF Mono', Monaco, monospace;
+      font-size: 11px;
+      color: var(--taupe-700);
+    }
+    
+    /* ========================================
+       DIVIDERS
+       ======================================== */
+    
+    .divider {
+      height: 1px;
+      background: var(--taupe-200);
+      margin: 64px 0;
+    }
+    
+    .divider-accent {
+      height: 4px;
+      border-radius: 2px;
+      margin: 48px 0;
+      max-width: 120px;
+    }
+    
+    .divider-accent.orange { background: var(--orange); }
+    .divider-accent.tobacco { background: var(--tobacco); }
+    .divider-accent.charcoal { background: var(--charcoal); }
+    
+    /* ========================================
+       RESPONSIVE
+       ======================================== */
+    
+    @media (max-width: 1024px) {
+      .essay-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+      
+      .essay-sidebar {
+        position: static;
+      }
+      
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      
+      .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .framework-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .color-grid-5 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      
+      .color-grid-8 {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 42px;
+      }
+      
+      .hero-subtitle {
+        font-size: 20px;
+      }
+      
+      .display-hero {
+        font-size: 48px;
+      }
+      
+      .article-title {
+        font-size: 32px;
+      }
+      
+      .cards-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .framework-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      
+      .footer-bottom {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+      }
+      
+      .color-grid-2,
+      .color-grid-3 {
+        grid-template-columns: 1fr;
+      }
+      
+      .color-grid-5 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .color-grid-8 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section class="hero">
+    <div class="container">
+      <p class="hero-overline">Emerson Agency — Brand Specimen v2.0</p>
+      <h1 class="hero-title">Trust thyself: every heart vibrates to that iron string.</h1>
+      <p class="hero-subtitle">Een complete showcase van het Emerson Agency design system, geïllustreerd met het werk van Ralph Waldo Emerson — de naamgever van het bureau.</p>
+      <p class="hero-meta"><span>December 2024</span> · Typography · Colors · Applications</p>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       TYPOGRAPHY SPECIMEN
+       ========================================== -->
+  <section class="type-specimen">
+    <div class="container">
+      <p class="section-label">Typography System</p>
+      <h2 class="section-title">Work Sans + IBM Plex Sans</h2>
+      <p class="section-intro">Een typografisch systeem dat structuur en precisie combineert. Work Sans voor headings die richting geven, IBM Plex Sans voor tekst die gelezen wordt.</p>
+      
+      <!-- Hero Display -->
+      <div class="type-sample">
+        <div class="type-meta">
+          <span class="type-tag primary">H1 Hero</span>
+          <span class="type-tag">72px</span>
+          <span class="type-tag">Work Sans Light</span>
+        </div>
+        <p class="display-hero">The only person you are destined to become is the person you decide to be.</p>
+      </div>
+      
+      <!-- H1 -->
+      <div class="type-sample">
+        <div class="type-meta">
+          <span class="type-tag primary">H1</span>
+          <span class="type-tag">48px</span>
+          <span class="type-tag">Work Sans Light</span>
+        </div>
+        <p class="display-h1">What lies behind us and what lies before us are tiny matters compared to what lies within us.</p>
+      </div>
+      
+      <!-- H2 -->
+      <div class="type-sample">
+        <div class="type-meta">
+          <span class="type-tag primary">H2</span>
+          <span class="type-tag">36px</span>
+          <span class="type-tag">Work Sans Light</span>
+        </div>
+        <p class="display-h2">Do not go where the path may lead, go instead where there is no path and leave a trail.</p>
+      </div>
+      
+      <!-- H3 -->
+      <div class="type-sample">
+        <div class="type-meta">
+          <span class="type-tag primary">H3</span>
+          <span class="type-tag">28px</span>
+          <span class="type-tag">Work Sans Light</span>
+        </div>
+        <p class="display-h3">The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate.</p>
+      </div>
+      
+      <!-- H4 -->
+      <div class="type-sample">
+        <div class="type-meta">
+          <span class="type-tag primary">H4</span>
+          <span class="type-tag">22px</span>
+          <span class="type-tag">Work Sans Regular</span>
+        </div>
+        <p class="display-h4">For every minute you are angry you lose sixty seconds of happiness.</p>
+      </div>
+      
+      <div class="divider"></div>
+      
+      <!-- Body Large -->
+      <div class="type-sample">
+        <div class="type-meta">
+          <span class="type-tag primary">Body Large</span>
+          <span class="type-tag">20px</span>
+          <span class="type-tag">IBM Plex Sans</span>
+        </div>
+        <p class="body-large">A man is what he thinks about all day long. The mind, once stretched by a new idea, never returns to its original dimensions. We are always getting ready to live but never living.</p>
+      </div>
+      
+      <!-- Body Regular -->
+      <div class="type-sample">
+        <div class="type-meta">
+          <span class="type-tag primary">Body</span>
+          <span class="type-tag">17px</span>
+          <span class="type-tag">IBM Plex Sans</span>
+        </div>
+        <p class="body-regular">To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment. It is easy in the world to live after the world's opinion; it is easy in solitude to live after our own; but the great man is he who in the midst of the crowd keeps with perfect sweetness the independence of solitude.</p>
+      </div>
+      
+      <!-- Body Small -->
+      <div class="type-sample">
+        <div class="type-meta">
+          <span class="type-tag primary">Body Small</span>
+          <span class="type-tag">15px</span>
+          <span class="type-tag">IBM Plex Sans</span>
+        </div>
+        <p class="body-small">Write it on your heart that every day is the best day in the year. He is rich who owns the day, and no one owns the day who allows it to be invaded with fret and anxiety. Finish every day and be done with it. You have done what you could.</p>
+      </div>
+      
+      <!-- Caption -->
+      <div class="type-sample">
+        <div class="type-meta">
+          <span class="type-tag primary">Caption</span>
+          <span class="type-tag">14px Italic</span>
+          <span class="type-tag">IBM Plex Sans</span>
+          <span class="type-tag">Taupe-700</span>
+        </div>
+        <p class="caption">Ralph Waldo Emerson (1803–1882) was een Amerikaans essayist, dichter en filosoof die de Transcendentalist beweging leidde in het midden van de 19e eeuw.</p>
+      </div>
+      
+      <!-- Label -->
+      <div class="type-sample">
+        <div class="type-meta">
+          <span class="type-tag primary">Label</span>
+          <span class="type-tag">12px Medium</span>
+          <span class="type-tag">Work Sans</span>
+          <span class="type-tag">Uppercase</span>
+        </div>
+        <p class="label">Self-Reliance · Nature · The Over-Soul · Circles · Experience</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       COLOR SYSTEM
+       ========================================== -->
+  <section class="color-section">
+    <div class="container">
+      <p class="section-label">Color Architecture</p>
+      <h2 class="section-title">Vier Lagen van Kleur</h2>
+      <p class="section-intro">Een hiërarchisch kleurensysteem dat richting geeft. Van de heilige signature tot de vrije toolkits.</p>
+      
+      <!-- Layer 1: Core -->
+      <div class="color-layer">
+        <div class="color-layer-header">
+          <p class="color-layer-title">Laag 1 · Core Brand</p>
+          <p class="color-layer-desc">De fundamentele kleuren — gebruik spaarzaam. Orange is sacred, Charcoal draagt alle tekst.</p>
+        </div>
+        <div class="color-grid color-grid-2">
+          <div class="color-card">
+            <div class="color-card-swatch large" style="background: var(--orange);"></div>
+            <div class="color-card-info">
+              <p class="color-card-name">Orange</p>
+              <p class="color-card-hex">#e7602a</p>
+              <p class="color-card-usage">Signature — Logo, 1 CTA per page, hero moments. NEVER backgrounds.</p>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-card-swatch large" style="background: var(--charcoal);"></div>
+            <div class="color-card-info">
+              <p class="color-card-name">Charcoal</p>
+              <p class="color-card-hex">#2a2d31</p>
+              <p class="color-card-usage">Foundation — Alle tekst, headings én body. De stabiele basis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Layer 2: Brand Support -->
+      <div class="color-layer">
+        <div class="color-layer-header">
+          <p class="color-layer-title">Laag 2 · Brand Support</p>
+          <p class="color-layer-desc">Karaktervolle accenten voor brand-niveau design. NIET voor workshops.</p>
+        </div>
+        <div class="color-grid color-grid-3">
+          <div class="color-card">
+            <div class="color-card-swatch" style="background: var(--tobacco);"></div>
+            <div class="color-card-info">
+              <p class="color-card-name">Tobacco</p>
+              <p class="color-card-hex">#9a7b4f</p>
+              <p class="color-card-usage">Warm, vintage, gold-tint</p>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-card-swatch" style="background: var(--slate-bronze);"></div>
+            <div class="color-card-info">
+              <p class="color-card-name">Slate Bronze</p>
+              <p class="color-card-hex">#7a6d5d</p>
+              <p class="color-card-usage">Koel, architectonisch</p>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-card-swatch" style="background: var(--oxblood);"></div>
+            <div class="color-card-info">
+              <p class="color-card-name">Oxblood</p>
+              <p class="color-card-hex">#6b3a3a</p>
+              <p class="color-card-usage">Bold, punk, memorable</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Layer 3: Taupe Foundation -->
+      <div class="color-layer">
+        <div class="color-layer-header">
+          <p class="color-layer-title">Laag 3 · Taupe Foundation</p>
+          <p class="color-layer-desc">Warme, aardse basis voor achtergronden en structuur. Vrij te gebruiken.</p>
+        </div>
+        <div class="color-grid color-grid-5">
+          <div class="color-card">
+            <div class="color-card-swatch small" style="background: var(--taupe-50);"></div>
+            <div class="color-card-info">
+              <p class="color-card-name">Taupe 50</p>
+              <p class="color-card-hex">#f7f5f3</p>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-card-swatch small" style="background: var(--taupe-100);"></div>
+            <div class="color-card-info">
+              <p class="color-card-name">Taupe 100</p>
+              <p class="color-card-hex">#ede8e3</p>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-card-swatch small" style="background: var(--taupe-200);"></div>
+            <div class="color-card-info">
+              <p class="color-card-name">Taupe 200</p>
+              <p class="color-card-hex">#ddd5cd</p>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-card-swatch small" style="background: var(--taupe-500);"></div>
+            <div class="color-card-info">
+              <p class="color-card-name">Taupe 500</p>
+              <p class="color-card-hex">#9d8b7d</p>
+            </div>
+          </div>
+          <div class="color-card">
+            <div class="color-card-swatch small" style="background: var(--taupe-700);"></div>
+            <div class="color-card-info">
+              <p class="color-card-name">Taupe 700</p>
+              <p class="color-card-hex">#6d5f52</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Layer 4a: Retro Warmth -->
+      <div class="color-layer">
+        <div class="color-layer-header">
+          <p class="color-layer-title">Laag 4a · Toolkit Retro Warmth</p>
+          <p class="color-layer-desc">Vrij te gebruiken voor workshops, frameworks, presentaties. NIET core identity.</p>
+        </div>
+        <div class="color-strip">
+          <div class="color-strip-item" style="background: var(--retro-mustard);">#d4a03c</div>
+          <div class="color-strip-item" style="background: var(--retro-rust);">#b8593b</div>
+          <div class="color-strip-item" style="background: var(--retro-olive);">#6b7c4c</div>
+          <div class="color-strip-item" style="background: var(--retro-teal);">#3d6b6b</div>
+          <div class="color-strip-item" style="background: var(--retro-burgundy);">#7a3b4c</div>
+          <div class="color-strip-item" style="background: var(--retro-gold);">#c9a961</div>
+          <div class="color-strip-item" style="background: var(--retro-sage);">#8b9b7a</div>
+          <div class="color-strip-item" style="background: var(--retro-terracotta);">#c67b5c</div>
+        </div>
+      </div>
+      
+      <!-- Layer 4b: Soft Palette -->
+      <div class="color-layer">
+        <div class="color-layer-header">
+          <p class="color-layer-title">Laag 4b · Toolkit Soft Palette</p>
+          <p class="color-layer-desc">Zachte tinten voor andere workshop contexten.</p>
+        </div>
+        <div class="color-strip">
+          <div class="color-strip-item light-text" style="background: var(--soft-blush);">#e8d5d0</div>
+          <div class="color-strip-item light-text" style="background: var(--soft-sky);">#d0dde8</div>
+          <div class="color-strip-item light-text" style="background: var(--soft-mint);">#d0e8d5</div>
+          <div class="color-strip-item light-text" style="background: var(--soft-lavender);">#ddd0e8</div>
+          <div class="color-strip-item light-text" style="background: var(--soft-peach);">#e8ddd0</div>
+          <div class="color-strip-item light-text" style="background: var(--soft-seafoam);">#d0e8e5</div>
+          <div class="color-strip-item light-text" style="background: var(--soft-rose);">#e8d0dd</div>
+          <div class="color-strip-item light-text" style="background: var(--soft-cream);">#e8e5d0</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       QUOTE VARIATIONS
+       ========================================== -->
+  <section class="section">
+    <div class="container">
+      <p class="section-label">Quote Styling</p>
+      <h2 class="section-title">Citaten in Context</h2>
+      <p class="section-intro">Verschillende manieren om quotes te presenteren, afhankelijk van context en nadruk.</p>
+      
+      <!-- Large Quote on White -->
+      <div class="quote-block bg-white">
+        <p class="quote-text large">"To be great is to be misunderstood."</p>
+        <p class="quote-attribution">Ralph Waldo Emerson</p>
+        <p class="quote-source">Self-Reliance, 1841</p>
+      </div>
+      
+      <!-- Quote on Taupe -->
+      <div class="quote-block bg-taupe">
+        <p class="quote-text">"The creation of a thousand forests is in one acorn."</p>
+        <p class="quote-attribution">Ralph Waldo Emerson</p>
+        <p class="quote-source">History, 1841</p>
+      </div>
+      
+      <!-- Quote on Charcoal -->
+      <div class="quote-block bg-charcoal">
+        <p class="quote-text">"Nothing great was ever achieved without enthusiasm."</p>
+        <p class="quote-attribution">Ralph Waldo Emerson</p>
+        <p class="quote-source">Circles, 1841</p>
+      </div>
+      
+      <div class="divider"></div>
+      
+      <!-- Pull Quotes with Accent -->
+      <h3 class="display-h4" style="margin-bottom: 32px;">Pull Quotes met Accent</h3>
+      
+      <div class="pull-quote accent-orange">
+        <p class="pull-quote-text">"The only way to have a friend is to be one."</p>
+        <p class="caption">— Friendship, 1841</p>
+      </div>
+      
+      <div class="pull-quote accent-tobacco">
+        <p class="pull-quote-text">"Our chief want is someone who will inspire us to be what we know we could be."</p>
+        <p class="caption">— Letters and Social Aims, 1875</p>
+      </div>
+      
+      <div class="pull-quote accent-oxblood">
+        <p class="pull-quote-text">"Dare to live the life you have dreamed for yourself. Go forward and make your dreams come true."</p>
+        <p class="caption">— Journals, 1833</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       ARTICLE LAYOUT
+       ========================================== -->
+  <section class="article" style="background: var(--taupe-50);">
+    <div class="container-narrow">
+      <div class="article-header">
+        <p class="article-overline">The Philosopher · Essay</p>
+        <h1 class="article-title">Nature</h1>
+        <p class="article-lead">Our age is retrospective. It builds the sepulchres of the fathers. It writes biographies, histories, and criticism. The foregoing generations beheld God and nature face to face; we, through their eyes.</p>
+      </div>
+      
+      <div class="divider-accent charcoal"></div>
+      
+      <div class="article-body">
+        <p>To go into solitude, a man needs to retire as much from his chamber as from society. I am not solitary whilst I read and write, though nobody is with me. But if a man would be alone, let him look at the stars.</p>
+        
+        <p>The rays that come from those heavenly worlds, will separate between him and what he touches. One might think the atmosphere was made transparent with this design, to give man, in the heavenly bodies, the perpetual presence of the <strong>sublime</strong>.</p>
+        
+        <h2>The Transparent Eyeball</h2>
+        
+        <p>Standing on the bare ground, — my head bathed by the blithe air, and uplifted into infinite space, — all mean egotism vanishes. I become a transparent eye-ball; I am nothing; I see all; the currents of the Universal Being circulate through me; I am part or particle of God.</p>
+        
+        <div class="pull-quote accent-tobacco">
+          <p class="pull-quote-text">"In the woods, we return to reason and faith."</p>
+        </div>
+        
+        <p>The name of the nearest friend sounds then foreign and accidental: to be brothers, to be acquaintances, — master or servant, is then a trifle and a disturbance. I am the lover of uncontained and immortal beauty.</p>
+        
+        <h3>Commodity</h3>
+        
+        <p>Whoever considers the final cause of the world, will discern a multitude of uses that result. They all admit of being thrown into one of the following classes:</p>
+        
+        <ul>
+          <li>Commodity — the practical advantages of nature</li>
+          <li>Beauty — the aesthetic satisfaction we derive</li>
+          <li>Language — nature as symbol and metaphor</li>
+          <li>Discipline — what nature teaches the understanding</li>
+        </ul>
+        
+        <p>Under the general name of Commodity, I rank all those advantages which our senses owe to nature. This, of course, is a benefit which is temporary and mediate, not ultimate, like its service to the soul.</p>
+        
+        <p>Read more about Emerson's philosophy in <a href="#">Self-Reliance</a> or explore <a href="#" class="signature">our methodology</a> inspired by his work.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CARD COMPONENTS
+       ========================================== -->
+  <section class="cards-section">
+    <div class="container">
+      <p class="section-label">Card Components</p>
+      <h2 class="section-title">Essays & Lectures</h2>
+      <p class="section-intro">Kaarten met verschillende accent kleuren uit de Brand Support laag.</p>
+      
+      <div class="cards-grid">
+        <div class="card accent-tobacco">
+          <div class="card-image" style="background: linear-gradient(135deg, var(--tobacco), var(--taupe-200));"></div>
+          <div class="card-content">
+            <p class="card-label">Essay · 1841</p>
+            <h3 class="card-title">Self-Reliance</h3>
+            <p class="card-excerpt">Trust thyself: every heart vibrates to that iron string. Accept the place the divine providence has found for you.</p>
+          </div>
+        </div>
+        
+        <div class="card accent-slate">
+          <div class="card-image" style="background: linear-gradient(135deg, var(--slate-bronze), var(--charcoal));"></div>
+          <div class="card-content">
+            <p class="card-label">Essay · 1836</p>
+            <h3 class="card-title">Nature</h3>
+            <p class="card-excerpt">To go into solitude, a man needs to retire as much from his chamber as from society.</p>
+          </div>
+        </div>
+        
+        <div class="card accent-oxblood">
+          <div class="card-image" style="background: linear-gradient(135deg, var(--oxblood), var(--charcoal));"></div>
+          <div class="card-content">
+            <p class="card-label">Essay · 1841</p>
+            <h3 class="card-title">Circles</h3>
+            <p class="card-excerpt">The eye is the first circle; the horizon which it forms is the second; and throughout nature this primary figure is repeated.</p>
+          </div>
+        </div>
+        
+        <div class="card accent-orange">
+          <div class="card-image" style="background: linear-gradient(135deg, var(--orange), var(--retro-rust));"></div>
+          <div class="card-content">
+            <p class="card-label">Lecture · 1837</p>
+            <h3 class="card-title">The American Scholar</h3>
+            <p class="card-excerpt">Man Thinking must not be subdued by his instruments. Books are for the scholar's idle times.</p>
+          </div>
+        </div>
+        
+        <div class="card accent-tobacco">
+          <div class="card-image" style="background: linear-gradient(135deg, var(--retro-olive), var(--retro-teal));"></div>
+          <div class="card-content">
+            <p class="card-label">Essay · 1844</p>
+            <h3 class="card-title">Experience</h3>
+            <p class="card-excerpt">Where do we find ourselves? In a series of which we do not know the extremes, and believe that it has none.</p>
+          </div>
+        </div>
+        
+        <div class="card accent-slate">
+          <div class="card-image" style="background: linear-gradient(135deg, var(--taupe-500), var(--taupe-700));"></div>
+          <div class="card-content">
+            <p class="card-label">Essay · 1841</p>
+            <h3 class="card-title">The Over-Soul</h3>
+            <p class="card-excerpt">We live in succession, in division, in parts, in particles. Meantime within man is the soul of the whole.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       ESSAY LAYOUT (DARK)
+       ========================================== -->
+  <section class="essay-section">
+    <div class="container">
+      <div class="essay-grid">
+        <div class="essay-sidebar">
+          <p class="essay-label">Featured Essay</p>
+          <h2 class="essay-sidebar-title">The Conduct of Life</h2>
+          <p class="essay-sidebar-meta">
+            Gepubliceerd in 1860<br>
+            Een van Emerson's laatste grote essay-collecties, gericht op praktische filosofie en het leiden van een betekenisvol leven.
+          </p>
+        </div>
+        
+        <div class="essay-content">
+          <p>The world is full of judgment-days, and into every assembly that a man enters, in every action he attempts, he is gauged and stamped. In every troop of boys that whoop and run in each yard and square, a newcomer is as well and accurately weighed in the course of a few days, and stamped with his right number, as if he had undergone a formal trial of his strength, speed, and temper.</p>
+          
+          <p>A healthy soul stands united with the <span class="highlight">Just and the True</span>, as the magnet arranges itself with the pole, so that he stands to all beholders like a transparent object betwixt them and the sun, and whoso journeys towards the sun, journeys toward that person.</p>
+          
+          <p>He is thus the medium of the highest influence to all who are not on the same level. Thus men of character are the conscience of the society to which they belong.</p>
+          
+          <p>The intuition of the moral sentiment is an insight of the perfection of the laws of the soul. These laws execute themselves. They are out of time, out of space, and not subject to circumstance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       WORKSHOP FRAMEWORK EXAMPLE
+       ========================================== -->
+  <section class="workshop-section">
+    <div class="container">
+      <p class="section-label">Toolkit Application</p>
+      <h2 class="section-title">De Vier V's</h2>
+      <p class="section-intro">Een framework gevisualiseerd met de Retro Warmth toolkit — zoals gebruikt in workshops en presentaties.</p>
+      
+      <div class="framework-grid">
+        <div class="framework-card light-text" style="background: var(--retro-teal);">
+          <p class="framework-number">1</p>
+          <p class="framework-title">Verbinden</p>
+          <p class="framework-desc">Relaties en netwerken bouwen</p>
+        </div>
+        <div class="framework-card light-text" style="background: var(--retro-olive);">
+          <p class="framework-number">2</p>
+          <p class="framework-title">Verbeteren</p>
+          <p class="framework-desc">Processen optimaliseren</p>
+        </div>
+        <div class="framework-card light-text" style="background: var(--retro-mustard);">
+          <p class="framework-number">3</p>
+          <p class="framework-title">Vernieuwen</p>
+          <p class="framework-desc">Innovatie en transformatie</p>
+        </div>
+        <div class="framework-card light-text" style="background: var(--retro-rust);">
+          <p class="framework-number">4</p>
+          <p class="framework-title">Verdienen</p>
+          <p class="framework-desc">Waarde creëren en oogsten</p>
+        </div>
+      </div>
+      
+      <div class="divider"></div>
+      
+      <h3 class="display-h4" style="margin-bottom: 24px;">Soft Palette Variant</h3>
+      <p class="body-regular" style="margin-bottom: 32px; color: var(--taupe-700);">Dezelfde framework met de Soft Palette toolkit — geschikt voor andere contexten.</p>
+      
+      <div class="framework-grid">
+        <div class="framework-card" style="background: var(--soft-sky); color: var(--charcoal);">
+          <p class="framework-number">1</p>
+          <p class="framework-title">Verbinden</p>
+          <p class="framework-desc">Relaties en netwerken bouwen</p>
+        </div>
+        <div class="framework-card" style="background: var(--soft-mint); color: var(--charcoal);">
+          <p class="framework-number">2</p>
+          <p class="framework-title">Verbeteren</p>
+          <p class="framework-desc">Processen optimaliseren</p>
+        </div>
+        <div class="framework-card" style="background: var(--soft-peach); color: var(--charcoal);">
+          <p class="framework-number">3</p>
+          <p class="framework-title">Vernieuwen</p>
+          <p class="framework-desc">Innovatie en transformatie</p>
+        </div>
+        <div class="framework-card" style="background: var(--soft-blush); color: var(--charcoal);">
+          <p class="framework-number">4</p>
+          <p class="framework-title">Verdienen</p>
+          <p class="framework-desc">Waarde creëren en oogsten</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       BUTTONS
+       ========================================== -->
+  <section class="buttons-section">
+    <div class="container">
+      <p class="section-label">UI Components</p>
+      <h2 class="section-title">Buttons</h2>
+      <p class="section-intro">Button varianten voor verschillende contexten en hiërarchieën.</p>
+      
+      <h4 class="display-h4" style="margin-bottom: 20px;">Primary Actions</h4>
+      <div class="button-row">
+        <button class="btn btn-primary">Primary Button</button>
+        <button class="btn btn-signature">Signature Button</button>
+        <button class="btn btn-secondary">Secondary Button</button>
+        <button class="btn btn-ghost">Ghost Button</button>
+      </div>
+      
+      <h4 class="display-h4" style="margin-bottom: 20px; margin-top: 48px;">Brand Support Variants</h4>
+      <div class="button-row">
+        <button class="btn btn-tobacco">Tobacco</button>
+        <button class="btn btn-slate">Slate Bronze</button>
+        <button class="btn btn-oxblood">Oxblood</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FINAL QUOTE
+       ========================================== -->
+  <section class="section" style="background: var(--taupe-50);">
+    <div class="container-narrow" style="text-align: center;">
+      <p class="section-label">Afsluiting</p>
+      <div class="divider-accent orange" style="margin: 24px auto;"></div>
+      <p class="display-h2" style="font-style: italic; margin-bottom: 24px;">"The reward of a thing well done is to have done it."</p>
+      <p class="caption">Ralph Waldo Emerson — Essays: Second Series, 1844</p>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p class="footer-logo">Emerson Agency</p>
+          <p class="footer-tagline">Bringing Order to Complexity — Strategic design & digital transformation consultancy.</p>
+          <p class="footer-quote">"Build therefore your own world. As fast as you conform your life to the pure idea in your mind, that will unfold its great proportions."</p>
+        </div>
+        
+        <div class="footer-col">
+          <p class="footer-col-title">Archetypes</p>
+          <ul class="footer-links">
+            <li><a href="#">The Architect</a></li>
+            <li><a href="#">The Guide</a></li>
+            <li><a href="#">The Philosopher</a></li>
+            <li><a href="#">The Catalyst</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <p class="footer-col-title">Essays</p>
+          <ul class="footer-links">
+            <li><a href="#">Self-Reliance</a></li>
+            <li><a href="#">Nature</a></li>
+            <li><a href="#">Circles</a></li>
+            <li><a href="#">Experience</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <p class="footer-col-title">Resources</p>
+          <ul class="footer-links">
+            <li><a href="#">Brand Guidelines</a></li>
+            <li><a href="#">Design Tokens</a></li>
+            <li><a href="#">Typography Specimen</a></li>
+            <li><a href="#">Color System</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2024 Emerson Agency. Inspired by Ralph Waldo Emerson.</p>
+        <p class="footer-version">Brand Specimen v2.0 · December 2024</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emerson Agency — Typography Specimen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* Core */
+      --orange: #e7602a;
+      --charcoal: #2a2d31;
+      --white: #ffffff;
+      
+      /* Brand Support */
+      --tobacco: #9a7b4f;
+      --slate-bronze: #7a6d5d;
+      --oxblood: #6b3a3a;
+      
+      /* Taupe */
+      --taupe-50: #f7f5f3;
+      --taupe-100: #ede8e3;
+      --taupe-200: #ddd5cd;
+      --taupe-500: #9d8b7d;
+      --taupe-700: #6d5f52;
+      
+      /* Typography */
+      --font-heading: 'Work Sans', sans-serif;
+      --font-body: 'IBM Plex Sans', sans-serif;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: var(--font-body);
+      background: var(--white);
+      color: var(--charcoal);
+      line-height: 1.5;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 64px 32px;
+    }
+    
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 80px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid var(--taupe-200);
+    }
+    
+    .header h1 {
+      font-family: var(--font-heading);
+      font-weight: 300;
+      font-size: 48px;
+      color: var(--charcoal);
+      margin-bottom: 8px;
+    }
+    
+    .header .tagline {
+      font-size: 18px;
+      color: var(--taupe-700);
+    }
+    
+    /* Section */
+    .section {
+      margin-bottom: 80px;
+    }
+    
+    .section-label {
+      font-family: var(--font-heading);
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--taupe-500);
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--taupe-200);
+    }
+    
+    /* Type Samples */
+    .type-sample {
+      margin-bottom: 48px;
+    }
+    
+    .type-meta {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+    
+    .type-meta span {
+      font-family: var(--font-heading);
+      font-size: 11px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--taupe-500);
+      background: var(--taupe-100);
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+    
+    .type-meta .color-indicator {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    
+    .type-meta .color-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+    
+    /* Heading Styles */
+    .h1-hero {
+      font-family: var(--font-heading);
+      font-size: 64px;
+      font-weight: 300;
+      line-height: 1.12;
+      color: var(--charcoal);
+    }
+    
+    .h1 {
+      font-family: var(--font-heading);
+      font-size: 42px;
+      font-weight: 300;
+      line-height: 1.24;
+      color: var(--charcoal);
+    }
+    
+    .h2 {
+      font-family: var(--font-heading);
+      font-size: 32px;
+      font-weight: 300;
+      line-height: 1.25;
+      color: var(--charcoal);
+    }
+    
+    .h3 {
+      font-family: var(--font-heading);
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 1.33;
+      color: var(--charcoal);
+    }
+    
+    .h4 {
+      font-family: var(--font-heading);
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.4;
+      color: var(--charcoal);
+    }
+    
+    /* Body Styles */
+    .body-large {
+      font-family: var(--font-body);
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.67;
+      color: var(--charcoal);
+    }
+    
+    .body {
+      font-family: var(--font-body);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.625;
+      color: var(--charcoal);
+    }
+    
+    .body-small {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.57;
+      color: var(--charcoal);
+    }
+    
+    /* Supporting Styles */
+    .caption {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.43;
+      color: var(--taupe-700);
+    }
+    
+    .label {
+      font-family: var(--font-heading);
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      line-height: 1.33;
+      color: var(--taupe-500);
+    }
+    
+    .overline {
+      font-family: var(--font-heading);
+      font-size: 11px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      line-height: 1.45;
+      color: var(--taupe-500);
+    }
+    
+    /* Quote */
+    .quote {
+      font-family: var(--font-body);
+      font-size: 20px;
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.6;
+      color: var(--charcoal);
+      padding-left: 24px;
+      border-left: 3px solid var(--taupe-200);
+    }
+    
+    /* Links */
+    .link {
+      color: var(--charcoal);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: var(--taupe-500);
+    }
+    
+    .link:hover {
+      text-decoration-color: var(--charcoal);
+    }
+    
+    .link-signature {
+      color: var(--orange);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: var(--orange);
+    }
+    
+    /* Inline Styles */
+    .strong {
+      font-weight: 600;
+    }
+    
+    .emphasis {
+      font-style: italic;
+    }
+    
+    /* Text Blocks */
+    .text-block {
+      padding: 32px;
+      background: var(--taupe-50);
+      border-radius: 12px;
+      margin-bottom: 24px;
+    }
+    
+    .text-block-white {
+      padding: 32px;
+      background: var(--white);
+      border: 1px solid var(--taupe-200);
+      border-radius: 12px;
+      margin-bottom: 24px;
+    }
+    
+    .text-block-dark {
+      padding: 32px;
+      background: var(--charcoal);
+      border-radius: 12px;
+      margin-bottom: 24px;
+    }
+    
+    .text-block-dark * {
+      color: var(--white);
+    }
+    
+    .text-block-dark .caption {
+      color: var(--taupe-200);
+    }
+    
+    /* Paragraph spacing */
+    .text-block p + p,
+    .text-block-white p + p,
+    .text-block-dark p + p {
+      margin-top: 16px;
+    }
+    
+    .text-block h2,
+    .text-block-white h2,
+    .text-block-dark h2 {
+      margin-bottom: 16px;
+    }
+    
+    .text-block h3,
+    .text-block-white h3,
+    .text-block-dark h3 {
+      margin-bottom: 12px;
+    }
+    
+    /* Alphabet Display */
+    .alphabet {
+      font-size: 24px;
+      line-height: 1.8;
+      letter-spacing: 0.02em;
+      color: var(--charcoal);
+      margin-bottom: 16px;
+    }
+    
+    .alphabet-heading {
+      font-family: var(--font-heading);
+      font-weight: 300;
+    }
+    
+    .alphabet-body {
+      font-family: var(--font-body);
+      font-weight: 400;
+    }
+    
+    /* Weight Showcase */
+    .weight-row {
+      display: flex;
+      align-items: baseline;
+      gap: 32px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+    
+    .weight-sample {
+      font-size: 32px;
+    }
+    
+    .weight-label {
+      font-family: var(--font-heading);
+      font-size: 11px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--taupe-500);
+      min-width: 100px;
+    }
+    
+    /* Comparison Grid */
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    
+    .comparison-col h4 {
+      font-family: var(--font-heading);
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--taupe-700);
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--taupe-200);
+    }
+    
+    /* Article Simulation */
+    .article {
+      max-width: 680px;
+    }
+    
+    .article .overline {
+      margin-bottom: 8px;
+    }
+    
+    .article .h2 {
+      margin-bottom: 16px;
+    }
+    
+    .article .body-large {
+      margin-bottom: 24px;
+      color: var(--taupe-700);
+    }
+    
+    .article .body {
+      margin-bottom: 16px;
+    }
+    
+    .article .h3 {
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+    
+    /* List Styles */
+    .list {
+      padding-left: 24px;
+      margin: 16px 0;
+    }
+    
+    .list li {
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.625;
+      color: var(--charcoal);
+      margin-bottom: 8px;
+    }
+    
+    /* Card Simulation */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    
+    .card {
+      background: var(--white);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(42,45,49,0.08);
+    }
+    
+    .card-image {
+      height: 120px;
+      background: linear-gradient(135deg, var(--taupe-100), var(--taupe-200));
+    }
+    
+    .card-content {
+      padding: 20px;
+    }
+    
+    .card-content .label {
+      margin-bottom: 4px;
+    }
+    
+    .card-content .h4 {
+      margin-bottom: 8px;
+    }
+    
+    .card-content .body-small {
+      color: var(--taupe-700);
+    }
+    
+    /* Footer */
+    .footer {
+      margin-top: 80px;
+      text-align: center;
+      padding: 48px;
+      background: var(--charcoal);
+      border-radius: 16px;
+      color: var(--white);
+    }
+    
+    .footer h3 {
+      font-family: var(--font-heading);
+      font-size: 24px;
+      font-weight: 300;
+      margin-bottom: 8px;
+    }
+    
+    .footer p {
+      color: var(--taupe-200);
+      font-size: 14px;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      .comparison-grid,
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .h1-hero {
+        font-size: 42px;
+      }
+      
+      .h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Header -->
+    <header class="header">
+      <h1>Typography Specimen</h1>
+      <p class="tagline">Emerson Agency — Work Sans + IBM Plex Sans</p>
+    </header>
+    
+    <!-- Alphabet -->
+    <section class="section">
+      <div class="section-label">Alphabet</div>
+      
+      <div class="type-sample">
+        <div class="type-meta">
+          <span>Work Sans</span>
+          <span>Light 300</span>
+          <span>Headings</span>
+        </div>
+        <div class="alphabet alphabet-heading">
+          ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+          abcdefghijklmnopqrstuvwxyz<br>
+          0123456789 !@#$%&*()
+        </div>
+      </div>
+      
+      <div class="type-sample">
+        <div class="type-meta">
+          <span>IBM Plex Sans</span>
+          <span>Regular 400</span>
+          <span>Body</span>
+        </div>
+        <div class="alphabet alphabet-body">
+          ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+          abcdefghijklmnopqrstuvwxyz<br>
+          0123456789 !@#$%&*()
+        </div>
+      </div>
+    </section>
+    
+    <!-- Font Weights -->
+    <section class="section">
+      <div class="section-label">Font Weights</div>
+      
+      <div class="type-sample">
+        <div class="type-meta"><span>Work Sans</span></div>
+        <div class="weight-row">
+          <span class="weight-label">Light 300</span>
+          <span class="weight-sample" style="font-family: var(--font-heading); font-weight: 300;">Hamburgefontsiv</span>
+        </div>
+        <div class="weight-row">
+          <span class="weight-label">Regular 400</span>
+          <span class="weight-sample" style="font-family: var(--font-heading); font-weight: 400;">Hamburgefontsiv</span>
+        </div>
+        <div class="weight-row">
+          <span class="weight-label">Medium 500</span>
+          <span class="weight-sample" style="font-family: var(--font-heading); font-weight: 500;">Hamburgefontsiv</span>
+        </div>
+      </div>
+      
+      <div class="type-sample">
+        <div class="type-meta"><span>IBM Plex Sans</span></div>
+        <div class="weight-row">
+          <span class="weight-label">Regular 400</span>
+          <span class="weight-sample" style="font-family: var(--font-body); font-weight: 400;">Hamburgefontsiv</span>
+        </div>
+        <div class="weight-row">
+          <span class="weight-label">Medium 500</span>
+          <span class="weight-sample" style="font-family: var(--font-body); font-weight: 500;">Hamburgefontsiv</span>
+        </div>
+        <div class="weight-row">
+          <span class="weight-label">Italic 400</span>
+          <span class="weight-sample" style="font-family: var(--font-body); font-weight: 400; font-style: italic;">Hamburgefontsiv</span>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Heading Scale -->
+    <section class="section">
+      <div class="section-label">Heading Scale</div>
+      
+      <div class="type-sample">
+        <div class="type-meta">
+          <span>H1 Hero</span>
+          <span>64px</span>
+          <span>Work Sans Light</span>
+          <span class="color-indicator"><span class="color-dot" style="background: var(--charcoal);"></span>Charcoal</span>
+        </div>
+        <h1 class="h1-hero">Bringing Order to Complexity</h1>
+      </div>
+      
+      <div class="type-sample">
+        <div class="type-meta">
+          <span>H1</span>
+          <span>42px</span>
+          <span>Work Sans Light</span>
+          <span class="color-indicator"><span class="color-dot" style="background: var(--charcoal);"></span>Charcoal</span>
+        </div>
+        <h1 class="h1">Strategic Design & Digital Transformation</h1>
+      </div>
+      
+      <div class="type-sample">
+        <div class="type-meta">
+          <span>H2</span>
+          <span>32px</span>
+          <span>Work Sans Light</span>
+          <span class="color-indicator"><span class="color-dot" style="background: var(--charcoal);"></span>Charcoal</span>
+        </div>
+        <h2 class="h2">Sophisticated Subversion</h2>
+      </div>
+      
+      <div class="type-sample">
+        <div class="type-meta">
+          <span>H3</span>
+          <span>24px</span>
+          <span>Work Sans Light</span>
+          <span class="color-indicator"><span class="color-dot" style="background: var(--charcoal);"></span>Charcoal</span>
+        </div>
+        <h3 class="h3">Swiss Precision Meets Punk Rebellion</h3>
+      </div>
+      
+      <div class="type-sample">
+        <div class="type-meta">
+          <span>H4</span>
+          <span>20px</span>
+          <span>Work Sans Regular</span>
+          <span class="color-indicator"><span class="color-dot" style="background: var(--charcoal);"></span>Charcoal</span>
+        </div>
+        <h4 class="h4">The Consultant Who Does Liberating Structures</h4>
+      </div>
+    </section>
+    
+    <!-- Body Scale -->
+    <section class="section">
+      <div class="section-label">Body Scale</div>
+      
+      <div class="type-sample">
+        <div class="type-meta">
+          <span>Body Large</span>
+          <span>18px</span>
+          <span>IBM Plex Sans Regular</span>
+          <span class="color-indicator"><span class="color-dot" style="background: var(--charcoal);"></span>Charcoal</span>
+        </div>
+        <p class="body-large">Emerson Agency helpt organisaties de kloof te overbruggen tussen strategie en uitvoering. We werken met publieke organisaties, culturele instellingen en adviesbureaus om complexe uitdagingen te vertalen naar werkbare systemen.</p>
+      </div>
+      
+      <div class="type-sample">
+        <div class="type-meta">
+          <span>Body</span>
+          <span>16px</span>
+          <span>IBM Plex Sans Regular</span>
+          <span class="color-indicator"><span class="color-dot" style="background: var(--charcoal);"></span>Charcoal</span>
+        </div>
+        <p class="body">De kern van ons werk is het vertalen van abstracte strategieën naar concrete, uitvoerbare plannen. We geloven dat de beste oplossingen ontstaan wanneer structuur en creativiteit samenkomen — wat wij 'Sophisticated Subversion' noemen. Grid-based discipline meets character.</p>
+      </div>
+      
+      <div class="type-sample">
+        <div class="type-meta">
+          <span>Body Small</span>
+          <span>14px</span>
+          <span>IBM Plex Sans Regular</span>
+          <span class="color-indicator"><span class="color-dot" style="background: var(--charcoal);"></span>Charcoal</span>
+        </div>
+        <p class="body-small">Onze methodologie combineert Liberating Structures, systemisch werken en Design Thinking in een atelier-stijl aanpak met hands-on workshops en concrete deliverables. We werken niet aan plannen die in een la verdwijnen.</p>
+      </div>
+    </section>
+    
+    <!-- Supporting Styles -->
+    <section class="section">
+      <div class="section-label">Supporting Styles</div>
+      
+      <div class="type-sample">
+        <div class="type-meta">
+          <span>Caption</span>
+          <span>14px Italic</span>
+          <span>IBM Plex Sans</span>
+          <span class="color-indicator"><span class="color-dot" style="background: var(--taupe-700);"></span>Taupe-700</span>
+        </div>
+        <p class="caption">Foto: Workshop sessie tijdens de Liberating Structures Immersion bij Volkshotel Amsterdam, december 2024.</p>
+      </div>
+      
+      <div class="type-sample">
+        <div class="type-meta">
+          <span>Label</span>
+          <span>12px Medium Uppercase</span>
+          <span>Work Sans</span>
+          <span class="color-indicator"><span class="color-dot" style="background: var(--taupe-500);"></span>Taupe-500</span>
+        </div>
+        <p class="label">Case Study</p>
+      </div>
+      
+      <div class="type-sample">
+        <div class="type-meta">
+          <span>Overline</span>
+          <span>11px Medium Uppercase</span>
+          <span>Work Sans</span>
+          <span class="color-indicator"><span class="color-dot" style="background: var(--taupe-500);"></span>Taupe-500</span>
+        </div>
+        <p class="overline">The Architect — Systems & Governance</p>
+      </div>
+      
+      <div class="type-sample">
+        <div class="type-meta">
+          <span>Quote</span>
+          <span>20px Italic</span>
+          <span>IBM Plex Sans</span>
+          <span class="color-indicator"><span class="color-dot" style="background: var(--charcoal);"></span>Charcoal</span>
+        </div>
+        <blockquote class="quote">"Spaarzaam is krachtig. Wat je weglaat, definieert net zo sterk als wat je toevoegt."</blockquote>
+      </div>
+    </section>
+    
+    <!-- Links -->
+    <section class="section">
+      <div class="section-label">Links</div>
+      
+      <div class="type-sample">
+        <div class="type-meta">
+          <span>Standard Link</span>
+          <span class="color-indicator"><span class="color-dot" style="background: var(--charcoal);"></span>Charcoal + Taupe underline</span>
+        </div>
+        <p class="body">Bekijk onze <a href="#" class="link">case studies</a> voor voorbeelden van eerdere projecten.</p>
+      </div>
+      
+      <div class="type-sample">
+        <div class="type-meta">
+          <span>Signature Link</span>
+          <span class="color-indicator"><span class="color-dot" style="background: var(--orange);"></span>Orange — spaarzaam gebruiken</span>
+        </div>
+        <p class="body">Klaar om te beginnen? <a href="#" class="link-signature">Neem contact op</a>.</p>
+      </div>
+    </section>
+    
+    <!-- Inline Styles -->
+    <section class="section">
+      <div class="section-label">Inline Styles</div>
+      
+      <div class="text-block-white">
+        <p class="body">
+          Dit is normale tekst met <span class="strong">vetgedrukte nadruk</span> en <span class="emphasis">cursieve nadruk</span>. 
+          Je kunt ook <span class="strong emphasis">beide combineren</span> voor extra impact. 
+          Links worden <a href="#" class="link">zo weergegeven</a> in lopende tekst.
+        </p>
+      </div>
+    </section>
+    
+    <!-- Text Blocks -->
+    <section class="section">
+      <div class="section-label">Text Blocks — Backgrounds</div>
+      
+      <div class="text-block-white">
+        <h3 class="h3">Op witte achtergrond</h3>
+        <p class="body">De standaard achtergrond voor de meeste content. Charcoal tekst biedt optimaal contrast en leesbaarheid. Dit is de basis voor alle documenten, presentaties en digitale interfaces.</p>
+      </div>
+      
+      <div class="text-block">
+        <h3 class="h3">Op Taupe-50 achtergrond</h3>
+        <p class="body">Warme, uitnodigende achtergrond voor secties die visueel onderscheid nodig hebben. Gebruik liberaal voor cards, sidebars en alternerende secties. Voegt warmte toe zonder afleidend te zijn.</p>
+      </div>
+      
+      <div class="text-block-dark">
+        <h3 class="h3">Op Charcoal achtergrond</h3>
+        <p class="body">Inverse kleurschema voor hero secties, footers en statements. Witte tekst op donkere achtergrond. Gebruik spaarzaam maar effectief voor visuele impact.</p>
+        <p class="caption">Caption tekst wordt Taupe-200 voor voldoende contrast.</p>
+      </div>
+    </section>
+    
+    <!-- Article Simulation -->
+    <section class="section">
+      <div class="section-label">Article Layout</div>
+      
+      <article class="article">
+        <p class="overline">The Philosopher — Vision & Strategy</p>
+        <h2 class="h2">Van Strategie naar Systeem: De Vertaalslag</h2>
+        <p class="body-large">Veel organisaties weten wat ze willen bereiken, maar lopen vast op het 'hoe'. De afstand tussen een heldere visie en dagelijkse executie blijkt vaak groter dan verwacht.</p>
+        
+        <p class="body">Dit is waar Emerson Agency het verschil maakt. We noemen het geen 'executieprobleem' maar een 'vertaalprobleem'. De strategie is er, maar de vertaling naar werkbare processen, duidelijke rollen en concrete acties ontbreekt.</p>
+        
+        <p class="body">Onze aanpak begint altijd met luisteren. Niet naar wat er in de strategiedocumenten staat, maar naar wat er leeft op de werkvloer. Waar lopen mensen vast? Welke workarounds hebben ze bedacht? Waar zit de energie?</p>
+        
+        <h3 class="h3">De Drie Fasen</h3>
+        
+        <p class="body">We werken volgens een driedelig model: Verhaal → Systeem → Eigenaarschap. Eerst creëren we een gedeeld narratief dat richting geeft. Dan ontwerpen we de systemen die dit narratief ondersteunen. Tot slot zorgen we dat teams eigenaarschap nemen over de uitvoering.</p>
+        
+        <ul class="list">
+          <li>Verhaal — Het strategische narratief dat richting geeft</li>
+          <li>Systeem — De structuren en processen die executie mogelijk maken</li>
+          <li>Eigenaarschap — De teams die het waarmaken</li>
+        </ul>
+        
+        <p class="body">Dit is geen lineair proces. We itereren, experimenteren en passen aan. Maar de drie elementen zijn altijd aanwezig, in elke fase van het werk.</p>
+        
+        <blockquote class="quote">"Een goed systeem maakt het makkelijk om het juiste te doen. Een slecht systeem maakt het moeilijk."</blockquote>
+        
+        <p class="caption">Uit: "Bringing Order to Complexity" — Emerson Agency Methodology, 2024</p>
+      </article>
+    </section>
+    
+    <!-- Card Layout -->
+    <section class="section">
+      <div class="section-label">Card Typography</div>
+      
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-image" style="background: linear-gradient(135deg, var(--tobacco), var(--taupe-200));"></div>
+          <div class="card-content">
+            <p class="label">Case Study</p>
+            <h4 class="h4">SVDJ Coachingstraject</h4>
+            <p class="body-small">Strategische begeleiding voor het Product Lifecycle Management programma bij Stimuleringsfonds voor de Journalistiek.</p>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-image" style="background: linear-gradient(135deg, var(--slate-bronze), var(--charcoal));"></div>
+          <div class="card-content">
+            <p class="label">Workshop</p>
+            <h4 class="h4">Liberating Structures</h4>
+            <p class="body-small">Tweedaagse immersive workshop over inclusieve participatie en effectieve teamdynamiek.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Font Comparison -->
+    <section class="section">
+      <div class="section-label">Font Comparison</div>
+      
+      <div class="comparison-grid">
+        <div class="comparison-col">
+          <h4>Work Sans — Headings</h4>
+          <p style="font-family: var(--font-heading); font-size: 18px; font-weight: 300; line-height: 1.6; margin-bottom: 12px;">
+            Work Sans is een geometrische sans-serif die structuur en helderheid communiceert. De lichte weights geven een elegante, moderne uitstraling zonder koud of afstandelijk te worden.
+          </p>
+          <p class="caption">Karakter: Geometrisch, helder, systematisch</p>
+        </div>
+        
+        <div class="comparison-col">
+          <h4>IBM Plex Sans — Body</h4>
+          <p style="font-family: var(--font-body); font-size: 18px; font-weight: 400; line-height: 1.6; margin-bottom: 12px;">
+            IBM Plex Sans is een humanistische sans-serif ontworpen voor optimale leesbaarheid. De open vormen en genereuze x-height maken lange teksten prettig leesbaar, zowel op scherm als in print.
+          </p>
+          <p class="caption">Karakter: Humanistisch, leesbaar, precies</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+      <h3>Emerson Agency</h3>
+      <p>Typography Specimen v2.0 — December 2024</p>
+    </footer>
+    
+  </div>
+</body>
+</html>

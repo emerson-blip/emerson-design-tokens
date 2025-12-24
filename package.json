@@ -1,16 +1,19 @@
 {
   "name": "emerson-design-tokens",
-  "version": "1.0.0",
-  "description": "Design tokens for Emerson",
+  "version": "2.0.0",
+  "description": "Design tokens for Emerson Agency — Bringing Order to Complexity",
   "main": "tokens.json",
   "files": [
-    "tokens.json"
+    "tokens.json",
+    "*.html"
   ],
   "keywords": [
     "design-tokens",
     "design-system",
-    "emerson"
+    "emerson",
+    "figma",
+    "tokens-studio"
   ],
-  "author": "Emerson",
+  "author": "Emerson Agency",
   "license": "MIT"
 }

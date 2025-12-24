@@ -1,425 +1,244 @@
 # Emerson Agency Design Tokens
 
-Complete design system voor Emerson Agency met **GitHub sync** voor Tokens Studio.
+Complete design system voor Emerson Agency — **v2.0**
+
+---
+
+## 📄 Specimens
+
+| File | Beschrijving |
+|------|--------------|
+| `emerson-specimen-complete.html` | **Volledige brand showcase** met R.W. Emerson teksten — typography, colors, components |
+| `typography-specimen.html` | Gedetailleerde typografie referentie met alle stijlen |
+| `specimen.html` | Compacte kleur- en token referentie |
 
 ---
 
 ## 🎯 Wat zit erin?
 
 **Eén bestand (`tokens.json`) met:**
-- **9 Token Sets** - Modulair georganiseerd
-- **3 Themes** - Pre-configured voor verschillende gebruik
-- **27 Colors** - Core, Taupe, Support + 2 Toolkits
-- **Complete Typography** - Work Sans + Lora
-- **Spacing System** - 4px grid
-- **Shadows** - 4 varianten
-- **Semantic Tokens** - High-level tokens voor easy use
+- **4 Color Layers** — Hiërarchisch georganiseerd
+- **21 Colors** — Core (2), Brand Support (3), Taupe (5), Toolkits (16)
+- **Complete Typography** — Work Sans + IBM Plex Sans
+- **Spacing System** — 4px grid
+- **Shadows** — 4 varianten
+- **Semantic Tokens** — High-level tokens voor easy use
 
 ---
 
-## 🚀 Setup (5 minuten)
+## 🎨 Color Architecture
 
-### Stap 1: Upload naar GitHub
+### Layer 1: Core Brand (2 colors)
+| Token | Hex | Role |
+|-------|-----|------|
+| `color.core.orange` | #e7602a | **Signature** — Logo, 1 CTA per page, hero moments. NEVER backgrounds. |
+| `color.core.charcoal` | #2a2d31 | **Foundation** — ALL text (headings + body) |
 
-**Optie A: Via GitHub Website**
-1. Ga naar https://github.com/new
-2. Repository name: `emerson-design-tokens`
-3. Klik "Create repository"
-4. Upload `tokens.json` file
+### Layer 2: Brand Support (3 colors)
+| Token | Hex | Character |
+|-------|-----|-----------|
+| `color.brand.tobacco` | #9a7b4f | Warm, vintage, gold-tint |
+| `color.brand.slate-bronze` | #7a6d5d | Cool, architectural, Swiss precision |
+| `color.brand.oxblood` | #6b3a3a | Bold, punk, memorable |
 
-**Optie B: Via Command Line**
-```bash
-cd emerson-design-tokens
-git init
-git add tokens.json
-git commit -m "Initial design tokens"
-git remote add origin https://github.com/JOUW-USERNAME/emerson-design-tokens.git
-git push -u origin main
+**⚠️ Brand-level accents only — not for workshops or toolkit contexts**
+
+### Layer 3: Taupe Foundation (5 shades)
+| Token | Hex | Usage |
+|-------|-----|-------|
+| `color.taupe.50` | #f7f5f3 | Page backgrounds, cards |
+| `color.taupe.100` | #ede8e3 | Hover states, alternating rows |
+| `color.taupe.200` | #ddd5cd | Borders, dividers |
+| `color.taupe.500` | #9d8b7d | Captions, muted text, icons |
+| `color.taupe.700` | #6d5f52 | Secondary text, labels |
+
+### Layer 4: Flexible Toolkits (16 colors)
+
+**Retro Warmth** (8 colors)
 ```
+mustard, rust, olive, teal, burgundy, gold, sage, terracotta
+```
+
+**Soft Palette** (8 colors)
+```
+blush, sky, mint, lavender, peach, seafoam, rose, cream
+```
+
+**⚠️ For workshops, frameworks, presentations only — NOT for core brand identity**
 
 ---
 
-### Stap 2: GitHub Personal Access Token
-
-1. Ga naar https://github.com/settings/tokens
-2. Klik "Generate new token (classic)"
-3. Token name: `Figma Tokens Studio`
-4. Scopes: **✅ repo** (all repo permissions)
-5. Generate token
-6. **Copy token** (je ziet hem maar 1x!)
-
----
-
-### Stap 3: Connect Figma Tokens Studio
-
-1. **Open Figma** → Open je design file
-2. **Open Tokens Studio** plugin (Plugins → Tokens Studio)
-3. Klik **Settings** (⚙️ icoon rechtsboven)
-4. Klik **"Sync"** tab
-5. Kies **"GitHub"** als sync provider
-
-**Vul in:**
-```
-Personal Access Token:  [plak je GitHub token]
-Repository:             JOUW-USERNAME/emerson-design-tokens
-Branch:                 main
-File Path:              tokens.json
-```
-
-6. Klik **"Save"**
-7. Tokens Studio test de connectie → Groene ✅ = success!
-
----
-
-### Stap 4: Pull Tokens
-
-1. In Tokens Studio: Klik **"Pull from GitHub"**
-2. Plugin download tokens.json
-3. Je ziet nu **9 token sets** verschijnen! 🎉
-
----
-
-### Stap 5: Activeer Theme
-
-1. Klik op **"Themes"** tab in plugin
-2. Select **"Emerson Default"**
-3. Tokens zijn nu actief! ✅
-
----
-
-## 🎨 Token Sets (9 total)
-
-### 1. **core** (3 colors)
-```
-orange    #e7602a   Logo, signature moments ONLY
-clay      #b8886e   PRIMARY WORKHORSE - headers, accents
-charcoal  #2a2d31   All body text, foundation
-```
-
-### 2. **taupe** (5 colors)
-```
-50    #f7f5f3   Primary background (warm white)
-100   #ede8e3   Card surfaces
-200   #ddd5cd   Borders, dividers
-500   #9d8b7d   Labels, tertiary
-700   #6d5f52   Text on taupe
-```
-
-### 3. **support** (4 colors)
-```
-deep-clay      #9a6f58   Darker clay
-burnt-sienna   #c87654   Warm alternative
-sage           #8a9b7e   Calm, balance
-steel-blue     #6b7d8f   Cool, technical
-```
-
-### 4. **toolkit-retro** (8 colors) - Workshop warm
-```
-rust        terracotta   amber      gold
-olive       forest       teal       slate
-```
-
-### 5. **toolkit-soft** (8 colors) - Workshop soft
-```
-coral       peach        apricot    sand
-mint        seafoam      sky        periwinkle
-```
-
-### 6. **typography**
-```
-Fonts:          Work Sans (heading) + Lora (body)
-Weights:        300, 400, 500, 600, 700
-Sizes:          h1 (42) → label (12)
-Line heights:   tight, snug, normal, relaxed
-Letter spacing: tight, normal, wide
-```
-
-### 7. **spacing**
-```
-Spacing:   4, 8, 12, 16, 20, 24, 32, 40, 48, 64, 80, 96
-Radius:    sm, md, lg, xl, 2xl, full
-Borders:   thin, medium, thick
-```
-
-### 8. **shadows**
-```
-sm   Subtle lift
-md   Cards (default)
-lg   Dropdowns, modals
-xl   Floating elements
-```
-
-### 9. **semantic** ⭐ **GEBRUIK DEZE!**
-```
-Text:       primary, secondary, heading, heading-signature
-Background: primary, secondary, surface, accent
-Border:     default, emphasis, strong
-Button:     primary, signature, secondary, tertiary
-Status:     success, warning, error, info
-```
-
----
-
-## 🎭 Themes (3 pre-configured)
-
-### 1. Emerson Default
-**Voor:** Corporate work, presentations, documents
-
-**Actief:**
-```
-✅ core, taupe, support
-✅ typography, spacing, shadows
-✅ semantic
-❌ toolkit-retro (disabled)
-❌ toolkit-soft (disabled)
-```
-
-### 2. Emerson Workshop Warm
-**Voor:** Workshops met warm/retro vibe
-
-**Actief:**
-```
-✅ Everything from Default
-✅ toolkit-retro (enabled)
-❌ toolkit-soft (disabled)
-```
-
-### 3. Emerson Workshop Soft
-**Voor:** Workshops met soft/calm vibe
-
-**Actif:**
-```
-✅ Everything from Default
-❌ toolkit-retro (disabled)
-✅ toolkit-soft (enabled)
-```
-
-**Switch theme in 1 click!** Geen handmatig sets aan/uit zetten.
-
----
-
-## 💡 Gebruik in Figma
-
-### Semantic Tokens (GEBRUIK DEZE!)
-
-In plaats van `{core.charcoal}` → gebruik `{text.primary}`
-
-**Waarom?**
-- ✅ Flexibel: Je kunt kleur centraal wijzigen
-- ✅ Semantisch: Duidelijk wat het betekent
-- ✅ Consistent: Team gebruikt dezelfde tokens
-
-**Voorbeelden:**
-```
-Text op witte achtergrond:
-{text.primary}              → Charcoal (body text)
-{text.heading}              → Clay (standard heading)
-{text.heading-signature}    → Orange (hero - spaarzaam!)
-
-Backgrounds:
-{bg.primary}                → White
-{bg.secondary}              → Taupe-50 (USE LIBERALLY!)
-{bg.surface}                → Taupe-100 (cards)
-
-Buttons:
-{button.primary.bg}         → Clay
-{button.signature.bg}       → Orange (max 1 per page!)
-{button.secondary.border}   → Taupe-200
-
-Spacing:
-{spacing.spacing.4}         → 16px (standard padding)
-{spacing.spacing.6}         → 24px (card padding)
-{spacing.radius.lg}         → 8px (button radius)
-```
-
----
-
-## 🎨 Design Philosophy
+## 🎯 Design Philosophy
 
 ### Spaarzaam = Krachtig
 
 **Orange is SACRED:**
-- Max 1-2x per page
-- NEVER backgrounds
-- Signature moments only
+- Max 1-2× per page/document
+- NEVER as background
+- Signature moments = alchemical transformation
 
-**Clay is WORKHORSE:**
-- Primary heading color
-- Use generously for accents
-- Warm, professional
-
-**Charcoal = Body Text:**
-- ALL body text
+**Charcoal = ALL Text:**
+- Headings AND body
 - No exceptions
-- Never orange in body!
+- Stable foundation
+
+**Brand Support Colors:**
+- Tobacco, Slate Bronze, Oxblood
+- Brand-level design only
+- Semantic mapping coming in v2.1
 
 **Taupe = Warmth:**
-- Liberal use for backgrounds
-- Creates warm, welcoming feel
-- Professional maar niet koud
+- Use liberally for backgrounds
+- Warm, professional feel
+- Not cold or clinical
 
 ---
 
-## 🔄 Workflow: Updates
+## 💡 Usage: Semantic Tokens
 
-### Team Member wijzigt tokens in GitHub:
+Use semantic tokens instead of direct color references:
 
-1. Edit `tokens.json` in GitHub (web interface)
-2. Commit changes
-3. **Jij in Figma:** Click "Pull from GitHub"
-4. Tokens update! ✅
+```
+Text:
+{semantic.text.primary}      → Charcoal (all text)
+{semantic.text.secondary}    → Taupe-700 (labels)
+{semantic.text.muted}        → Taupe-500 (captions)
+{semantic.text.signature}    → Orange (sparingly!)
 
-### Jij wijzigt tokens in Figma:
+Backgrounds:
+{semantic.bg.primary}        → White
+{semantic.bg.secondary}      → Taupe-50
+{semantic.bg.tertiary}       → Taupe-100
 
-1. Edit in Tokens Studio plugin
-2. Click **"Push to GitHub"**
-3. GitHub updates
-4. **Team:** Click "Pull from GitHub"
-5. Everyone in sync! 🎉
+Borders:
+{semantic.border.default}    → Taupe-200
+{semantic.border.emphasis}   → Taupe-500
+{semantic.border.strong}     → Charcoal
 
----
-
-## 👥 Team Collaboration
-
-### Setup voor team members:
-
-1. **Install** Tokens Studio plugin in Figma
-2. **Connect** same GitHub repo (read-only ok)
-   - Settings → Sync → GitHub
-   - Enter GitHub token
-   - Repository: `JOUW-USERNAME/emerson-design-tokens`
-   - File Path: `tokens.json`
-3. **Pull tokens** from GitHub
-4. **Select theme** (Emerson Default / Workshop Warm / Workshop Soft)
-5. ✅ Everyone heeft dezelfde tokens!
+Accents:
+{semantic.accent.signature}  → Orange
+{semantic.accent.warm}       → Tobacco
+{semantic.accent.cool}       → Slate Bronze
+{semantic.accent.bold}       → Oxblood
+```
 
 ---
 
-## 🔧 Advanced: Branching
+## 🔤 Typography
 
-### Test nieuwe tokens in feature branch:
+### Fonts
+- **Headings:** Work Sans (Light 300, Regular 400, Medium 500)
+- **Body:** IBM Plex Sans (Regular 400, Medium 500)
+
+### Type Scale
+```
+hero     72px   Work Sans Light
+h1       48px   Work Sans Light
+h2       36px   Work Sans Light
+h3       28px   Work Sans Light
+h4       22px   Work Sans Regular
+body-lg  20px   IBM Plex Sans Regular
+body     17px   IBM Plex Sans Regular
+body-sm  15px   IBM Plex Sans Regular
+caption  14px   IBM Plex Sans Regular (italic context)
+label    12px   Work Sans Medium, UPPERCASE
+```
+
+---
+
+## 📐 Spacing
+
+4px base grid:
+```
+1:  4px     5:  20px    12: 48px
+2:  8px     6:  24px    16: 64px
+3:  12px    8:  32px    20: 80px
+4:  16px    10: 40px    24: 96px
+```
+
+---
+
+## 🔄 Migration from v1.0
+
+### Breaking Changes
+
+**Removed:**
+- `color.clay` (#b8886e) — Use `color.core.charcoal` for text, or brand support colors for accents
+
+**Changed:**
+- Heading color: Was Clay → Now Charcoal
+- Token structure: Flat → Nested (`color.core.orange` instead of `color.orange`)
+- Body font: Lora → IBM Plex Sans
+
+**Added:**
+- `color.brand.tobacco`
+- `color.brand.slate-bronze`
+- `color.brand.oxblood`
+- Semantic accent tokens
+
+### Quick Migration
+
+| Old (v1) | New (v2) |
+|----------|----------|
+| `{color.clay}` | `{color.core.charcoal}` or `{semantic.accent.warm}` |
+| `{color.orange}` | `{color.core.orange}` |
+| `{color.charcoal}` | `{color.core.charcoal}` |
+| `{color.taupe-50}` | `{color.taupe.50}` |
+
+---
+
+## 🚀 Setup
+
+### 1. Clone or Download
 
 ```bash
-# In GitHub:
-1. Create branch: feature/new-colors
-
-# In Tokens Studio:
-2. Change "Branch" to: feature/new-colors
-3. Edit tokens
-4. Push to GitHub
-
-# Test in Figma:
-5. Team kan feature branch pullen om te testen
-
-# Merge to main:
-6. Create Pull Request on GitHub
-7. Review → Merge
-8. Everyone switch back to "main" branch
-9. Pull from GitHub → Updates live! ✅
+git clone https://github.com/YOUR-USERNAME/emerson-design-tokens.git
 ```
+
+### 2. Connect to Figma (Tokens Studio)
+
+1. Open Figma → Tokens Studio plugin
+2. Settings → Sync → GitHub
+3. Enter:
+   - Repository: `YOUR-USERNAME/emerson-design-tokens`
+   - Branch: `main`
+   - File Path: `tokens.json`
+4. Pull tokens
+
+### 3. Use Semantic Tokens
+
+In your designs, reference semantic tokens:
+- `{semantic.text.primary}` for text
+- `{semantic.bg.secondary}` for backgrounds
+- `{semantic.accent.signature}` for CTAs (sparingly!)
 
 ---
 
 ## 📋 Quick Reference
 
-### Meest gebruikte semantic tokens:
-
-| Token | → | Waarde | Gebruik |
-|-------|---|--------|---------|
-| `{text.primary}` | → | Charcoal | Alle body text |
-| `{text.heading}` | → | Clay | Standard headings |
-| `{text.heading-signature}` | → | Orange | Hero (max 1-2x!) |
-| `{bg.secondary}` | → | Taupe-50 | Warm backgrounds |
-| `{button.primary.bg}` | → | Clay | Primary buttons |
-| `{button.signature.bg}` | → | Orange | CTA (max 1x!) |
-| `{spacing.spacing.4}` | → | 16px | Standard padding |
-| `{spacing.spacing.6}` | → | 24px | Card padding |
-| `{spacing.radius.lg}` | → | 8px | Button radius |
-| `{shadows.shadow.md}` | → | ... | Card shadow |
+| Need | Token |
+|------|-------|
+| Body text | `{semantic.text.primary}` |
+| Heading | `{semantic.text.primary}` |
+| Page background | `{semantic.bg.secondary}` |
+| Card background | `{semantic.bg.tertiary}` |
+| Border | `{semantic.border.default}` |
+| CTA button | `{semantic.accent.signature}` (max 1!) |
+| Warm accent | `{semantic.accent.warm}` |
+| Cool accent | `{semantic.accent.cool}` |
+| Bold accent | `{semantic.accent.bold}` |
 
 ---
 
-## 🆘 Troubleshooting
+## 📝 Version History
 
-**Problem:** "Pull from GitHub" werkt niet
-→ **Fix:** Check GitHub token permissions (needs `repo` scope)
-
-**Problem:** Tokens niet showing in Figma
-→ **Fix:** Check File Path = `tokens.json` (not `tokens` folder)
-
-**Problem:** Changes niet syncing
-→ **Fix:** Check je bent op juiste branch (`main`)
-
-**Problem:** Semantic tokens niet resolving
-→ **Fix:** Make sure theme is active (not just sets)
-
-**Problem:** Token references tonen `{core.charcoal}` instead of color
-→ **Fix:** Activate theme in "Themes" tab, niet alleen sets
+| Version | Date | Changes |
+|---------|------|---------|
+| 2.0.0 | 2024-12-23 | Color architecture redesign, Clay removed, Brand Support layer added, specimens |
+| 1.0.0 | 2024-12-14 | Initial release |
 
 ---
 
-## 📝 Tips & Tricks
+**Emerson Agency — Bringing Order to Complexity**
 
-### ✅ DO:
-- Use semantic tokens (`{text.primary}`)
-- Pull often to stay in sync
-- Use themes to switch context (corporate vs workshop)
-- Document changes in commit messages
-- Test in feature branch voor grote changes
-
-### ❌ DON'T:
-- Use base tokens directly (gebruik semantic layer)
-- Forget to pull before editing
-- Edit tokens.json manually (use plugin)
-- Mix themes (choose one per design)
-- Use orange for backgrounds (NEVER!)
-
----
-
-## 📦 Single File Structure
-
-Het `tokens.json` bestand bevat alles, maar Tokens Studio splitst het intern:
-
-```json
-{
-  "core": { ... },           ← Token Set 1
-  "taupe": { ... },          ← Token Set 2
-  "support": { ... },        ← Token Set 3
-  "toolkit-retro": { ... },  ← Token Set 4
-  "toolkit-soft": { ... },   ← Token Set 5
-  "typography": { ... },     ← Token Set 6
-  "spacing": { ... },        ← Token Set 7
-  "shadows": { ... },        ← Token Set 8
-  "semantic": { ... },       ← Token Set 9
-  "$themes": [ ... ],        ← Theme definitions
-  "$metadata": { ... }       ← Set order
-}
-```
-
-**Eén bestand → GitHub sync compatible ✅**
-
----
-
-## 🎯 Version History
-
-**v1.0.0** - December 14, 2024
-- Initial release
-- 27 colors (Core, Taupe, Support, 2x Toolkit)
-- Complete typography (Work Sans + Lora)
-- Spacing grid (4px base)
-- 3 pre-configured themes
-- GitHub sync ready
-
----
-
-## 📞 Need Help?
-
-- **Tokens Studio Docs:** https://docs.tokens.studio/
-- **GitHub Issues:** Voor bug reports
-- **Notion Brand Guidelines:** Volledige brand specs
-
----
-
-**Emerson Agency - Bringing Order to Complexity**
-
-*Design Tokens v1.0 - GitHub Sync Ready*
+*Design Tokens v2.0*
