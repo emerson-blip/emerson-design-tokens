@@ -16,9 +16,13 @@
     :root {
       /* Core Colors */
       --core-orange: #e7602a;
-      --core-clay: #b8886e;
       --core-charcoal: #2a2d31;
       --core-white: #ffffff;
+
+      /* Brand Colors */
+      --brand-tobacco: #9a7b4f;
+      --brand-slate-bronze: #7a6d5d;
+      --brand-oxblood: #6b3a3a;
 
       /* Taupe Scale */
       --taupe-50: #f7f5f3;
@@ -27,46 +31,41 @@
       --taupe-500: #9d8b7d;
       --taupe-700: #6d5f52;
 
-      /* Support Colors */
-      --support-deep-clay: #9a6f58;
-      --support-burnt-sienna: #c87654;
-      --support-sage: #8a9b7e;
-      --support-steel-blue: #6b7d8f;
-
       /* Toolkit Retro */
-      --retro-rust: #c85a3e;
-      --retro-terracotta: #d97a5a;
-      --retro-amber: #e8a55c;
-      --retro-gold: #d4b883;
-      --retro-olive: #a8a16b;
-      --retro-forest: #6b8a5f;
-      --retro-teal: #5a8b8f;
-      --retro-slate: #6d7c85;
+      --retro-mustard: #d4a03c;
+      --retro-rust: #b8593b;
+      --retro-olive: #6b7c4c;
+      --retro-teal: #3d6b6b;
+      --retro-burgundy: #7a3b4c;
+      --retro-gold: #c9a961;
+      --retro-sage: #8b9b7a;
+      --retro-terracotta: #c67b5c;
 
       /* Toolkit Soft */
-      --soft-coral: #e8857a;
-      --soft-peach: #f5b895;
-      --soft-apricot: #f0c78a;
-      --soft-sand: #d9c9a3;
-      --soft-mint: #b4c9b4;
-      --soft-seafoam: #a5c4c4;
-      --soft-sky: #9bb8cc;
-      --soft-periwinkle: #a8b3cc;
+      --soft-blush: #e8d5d0;
+      --soft-sky: #d0dde8;
+      --soft-mint: #d0e8d5;
+      --soft-lavender: #ddd0e8;
+      --soft-peach: #e8ddd0;
+      --soft-seafoam: #d0e8e5;
+      --soft-rose: #e8d0dd;
+      --soft-cream: #e8e5d0;
 
       /* Typography */
       --font-heading: 'Work Sans', sans-serif;
       --font-body: 'IBM Plex Sans', sans-serif;
 
-      /* Font Sizes */
-      --text-hero: 64px;
-      --text-h1: 42px;
-      --text-h2: 32px;
-      --text-h3: 24px;
-      --text-h4: 20px;
-      --text-body-lg: 18px;
-      --text-body: 16px;
-      --text-body-sm: 14px;
-      --text-xs: 12px;
+      /* Font Sizes (Desktop) */
+      --text-hero: 72px;
+      --text-h1: 48px;
+      --text-h2: 36px;
+      --text-h3: 28px;
+      --text-h4: 22px;
+      --text-body-lg: 20px;
+      --text-body: 17px;
+      --text-body-sm: 15px;
+      --text-caption: 14px;
+      --text-label: 12px;
 
       /* Spacing */
       --space-0: 0;
@@ -193,7 +192,7 @@
 
     .text-label {
       font-family: var(--font-heading);
-      font-size: var(--text-xs);
+      font-size: var(--text-label);
       font-weight: 300;
       text-transform: uppercase;
       letter-spacing: 0.08em;
@@ -332,11 +331,11 @@
 
     .nav-link:hover {
       background: var(--taupe-50);
-      color: var(--core-clay);
+      color: var(--brand-tobacco);
     }
 
     .nav-link.active {
-      color: var(--core-clay);
+      color: var(--brand-tobacco);
     }
 
     .nav-link svg {
@@ -382,14 +381,14 @@
 
     .nav-dropdown-link:hover {
       background: var(--taupe-50);
-      color: var(--core-clay);
+      color: var(--brand-tobacco);
     }
 
     .nav-dropdown-label {
       display: block;
       padding: var(--space-2) var(--space-4);
       font-family: var(--font-heading);
-      font-size: var(--text-xs);
+      font-size: var(--text-label);
       font-weight: 500;
       text-transform: uppercase;
       letter-spacing: 0.05em;
@@ -452,7 +451,7 @@
       border: 1px solid var(--taupe-200);
       border-radius: var(--radius-full);
       font-family: var(--font-heading);
-      font-size: var(--text-xs);
+      font-size: var(--text-label);
       font-weight: 500;
       text-transform: uppercase;
       letter-spacing: 0.05em;
@@ -463,7 +462,7 @@
     .hero-label-dot {
       width: 8px;
       height: 8px;
-      background: var(--support-sage);
+      background: var(--retro-sage);
       border-radius: var(--radius-full);
     }
 
@@ -473,7 +472,7 @@
     }
 
     .hero-title span {
-      color: var(--core-clay);
+      color: var(--brand-tobacco);
     }
 
     .hero-description {
@@ -510,12 +509,12 @@
     }
 
     .btn-primary {
-      background: var(--core-clay);
+      background: var(--brand-tobacco);
       color: var(--core-white);
     }
 
     .btn-primary:hover {
-      background: var(--support-deep-clay);
+      background: var(--brand-slate-bronze);
     }
 
     .btn-secondary {
@@ -540,7 +539,7 @@
 
     .btn-ghost {
       background: transparent;
-      color: var(--core-clay);
+      color: var(--brand-tobacco);
     }
 
     .btn-ghost:hover {
@@ -575,7 +574,7 @@
     }
 
     .overview-label {
-      color: var(--core-clay);
+      color: var(--brand-tobacco);
       margin-bottom: var(--space-3);
     }
 
@@ -619,7 +618,7 @@
     .feature-icon svg {
       width: 24px;
       height: 24px;
-      color: var(--core-clay);
+      color: var(--brand-tobacco);
     }
 
     .feature-title {
@@ -640,7 +639,7 @@
       font-family: var(--font-heading);
       font-size: var(--text-body-sm);
       font-weight: 500;
-      color: var(--core-clay);
+      color: var(--brand-tobacco);
       transition: gap var(--transition-fast);
     }
 
@@ -665,7 +664,7 @@
     }
 
     .section-label {
-      color: var(--core-clay);
+      color: var(--brand-tobacco);
       margin-bottom: var(--space-3);
     }
 
@@ -753,7 +752,7 @@
 
     .color-value {
       font-family: 'SF Mono', Monaco, 'Cascadia Code', monospace;
-      font-size: var(--text-xs);
+      font-size: var(--text-label);
       color: var(--taupe-500);
     }
 
@@ -816,16 +815,16 @@
 
     .type-sample-label {
       font-family: var(--font-heading);
-      font-size: var(--text-xs);
+      font-size: var(--text-label);
       font-weight: 500;
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      color: var(--core-clay);
+      color: var(--brand-tobacco);
     }
 
     .type-sample-meta {
       font-family: 'SF Mono', Monaco, monospace;
-      font-size: var(--text-xs);
+      font-size: var(--text-label);
       color: var(--taupe-500);
     }
 
@@ -838,7 +837,7 @@
       font-size: 64px;
       font-weight: 300;
       line-height: 1.1;
-      color: var(--core-clay);
+      color: var(--brand-tobacco);
     }
 
     .type-sample-preview.type-h1 {
@@ -927,11 +926,11 @@
 
     .font-card-role {
       font-family: var(--font-heading);
-      font-size: var(--text-xs);
+      font-size: var(--text-label);
       font-weight: 500;
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      color: var(--core-clay);
+      color: var(--brand-tobacco);
       margin-bottom: var(--space-4);
     }
 
@@ -950,7 +949,7 @@
       padding: var(--space-1) var(--space-3);
       background: var(--core-white);
       border-radius: var(--radius-full);
-      font-size: var(--text-xs);
+      font-size: var(--text-label);
       color: var(--taupe-700);
     }
 
@@ -973,14 +972,14 @@
     }
 
     .spacing-box {
-      background: var(--core-clay);
+      background: var(--brand-tobacco);
       border-radius: var(--radius-sm);
       margin-bottom: var(--space-2);
     }
 
     .spacing-value {
       font-family: 'SF Mono', Monaco, monospace;
-      font-size: var(--text-xs);
+      font-size: var(--text-label);
       color: var(--taupe-700);
     }
 
@@ -1068,7 +1067,7 @@
 
     .form-input:focus {
       outline: none;
-      border-color: var(--core-clay);
+      border-color: var(--brand-tobacco);
       box-shadow: 0 0 0 3px rgba(184, 136, 110, 0.15);
     }
 
@@ -1082,7 +1081,7 @@
     }
 
     .form-hint {
-      font-size: var(--text-xs);
+      font-size: var(--text-label);
       color: var(--taupe-500);
     }
 
@@ -1121,11 +1120,11 @@
 
     .card-label {
       font-family: var(--font-heading);
-      font-size: var(--text-xs);
+      font-size: var(--text-label);
       font-weight: 500;
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      color: var(--core-clay);
+      color: var(--brand-tobacco);
       margin-bottom: var(--space-2);
     }
 
@@ -1158,23 +1157,23 @@
     }
 
     .badge-success {
-      background: rgba(138, 155, 126, 0.15);
-      color: #5a6b52;
+      background: rgba(139, 155, 122, 0.15);
+      color: var(--retro-olive);
     }
 
     .badge-warning {
-      background: rgba(232, 165, 92, 0.15);
-      color: #9a6f3a;
+      background: rgba(212, 160, 60, 0.15);
+      color: var(--retro-mustard);
     }
 
     .badge-error {
-      background: rgba(200, 90, 62, 0.15);
-      color: #a04a32;
+      background: rgba(184, 89, 59, 0.15);
+      color: var(--retro-rust);
     }
 
     .badge-info {
-      background: rgba(107, 125, 143, 0.15);
-      color: #4a5a68;
+      background: rgba(61, 107, 107, 0.15);
+      color: var(--retro-teal);
     }
 
     .badge-neutral {
@@ -1215,7 +1214,7 @@
 
     .shadow-value {
       font-family: 'SF Mono', Monaco, monospace;
-      font-size: var(--text-xs);
+      font-size: var(--text-label);
       color: var(--taupe-500);
     }
 
@@ -1249,7 +1248,7 @@
 
     .radius-value {
       font-family: 'SF Mono', Monaco, monospace;
-      font-size: var(--text-xs);
+      font-size: var(--text-label);
       color: var(--taupe-500);
     }
 
@@ -1336,7 +1335,7 @@
     .resource-icon svg {
       width: 28px;
       height: 28px;
-      color: var(--core-clay);
+      color: var(--brand-tobacco);
     }
 
     .resource-title {
@@ -1357,7 +1356,7 @@
       font-family: var(--font-heading);
       font-size: var(--text-body-sm);
       font-weight: 500;
-      color: var(--core-clay);
+      color: var(--brand-tobacco);
     }
 
     .resource-link svg {
@@ -1472,7 +1471,7 @@
 
     .footer-column-title {
       font-family: var(--font-heading);
-      font-size: var(--text-xs);
+      font-size: var(--text-label);
       font-weight: 500;
       text-transform: uppercase;
       letter-spacing: 0.05em;
@@ -1519,7 +1518,7 @@
       background: rgba(255, 255, 255, 0.05);
       border-radius: var(--radius-full);
       font-family: 'SF Mono', Monaco, monospace;
-      font-size: var(--text-xs);
+      font-size: var(--text-label);
       color: var(--taupe-500);
     }
 
@@ -1531,7 +1530,7 @@
     }
 
     .text-clay {
-      color: var(--core-clay);
+      color: var(--brand-tobacco);
     }
 
     .text-orange {
@@ -1660,19 +1659,19 @@
       display: inline-block;
       padding: var(--space-1) var(--space-3);
       font-family: var(--font-heading);
-      font-size: var(--text-xs);
+      font-size: var(--text-label);
       font-weight: 500;
       border-radius: var(--radius-full);
     }
 
     .usage-badge.success {
-      background: rgba(138, 155, 126, 0.15);
-      color: #5a6b52;
+      background: rgba(139, 155, 122, 0.15);
+      color: var(--retro-olive);
     }
 
     .usage-badge.error {
-      background: rgba(200, 90, 62, 0.15);
-      color: #a04a32;
+      background: rgba(184, 89, 59, 0.15);
+      color: var(--retro-rust);
     }
 
     .usage-list {
@@ -1700,7 +1699,7 @@
     }
 
     .usage-card.do .usage-list li::before {
-      background: var(--support-sage);
+      background: var(--retro-sage);
     }
 
     .usage-card.dont .usage-list li::before {
@@ -1719,7 +1718,7 @@
     .clearspace-box {
       position: relative;
       padding: var(--space-10);
-      border: 2px dashed var(--core-clay);
+      border: 2px dashed var(--brand-tobacco);
     }
 
     .clearspace-indicator {
@@ -1811,7 +1810,7 @@
     .slide-header {
       width: 60%;
       height: 4px;
-      background: var(--core-clay);
+      background: var(--brand-tobacco);
       border-radius: 2px;
       margin-bottom: var(--space-2);
     }
@@ -1821,7 +1820,7 @@
     }
 
     .slide-header.report {
-      background: var(--support-steel-blue);
+      background: var(--retro-teal);
     }
 
     .slide-title {
@@ -1876,7 +1875,7 @@
 
     .chart-bar {
       flex: 1;
-      background: var(--support-steel-blue);
+      background: var(--retro-teal);
       border-radius: 2px 2px 0 0;
     }
 
@@ -1979,11 +1978,11 @@
 
     .template-label {
       font-family: var(--font-heading);
-      font-size: var(--text-xs);
+      font-size: var(--text-label);
       font-weight: 500;
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      color: var(--core-clay);
+      color: var(--brand-tobacco);
     }
 
     .template-title {
@@ -2003,7 +2002,7 @@
     }
 
     .template-format {
-      font-size: var(--text-xs);
+      font-size: var(--text-label);
       color: var(--taupe-500);
     }
 
@@ -2158,7 +2157,7 @@
     .sig-divider {
       width: 40px;
       height: 2px;
-      background: var(--core-clay);
+      background: var(--brand-tobacco);
       margin-bottom: var(--space-3);
     }
 
@@ -2276,7 +2275,7 @@
       padding: var(--space-1) var(--space-2);
       background: var(--taupe-100);
       border-radius: var(--radius-sm);
-      font-size: var(--text-xs);
+      font-size: var(--text-label);
       color: var(--taupe-700);
     }
 
@@ -2305,7 +2304,7 @@
     .social-cover {
       width: 100%;
       height: 100%;
-      background: linear-gradient(135deg, var(--core-clay), var(--support-deep-clay));
+      background: linear-gradient(135deg, var(--brand-tobacco), var(--brand-slate-bronze));
     }
 
     .social-cover.twitter {
@@ -2357,7 +2356,7 @@
     .post-image {
       width: 80px;
       height: 80px;
-      background: linear-gradient(135deg, var(--soft-coral), var(--soft-peach));
+      background: linear-gradient(135deg, var(--soft-blush), var(--soft-peach));
       border-radius: var(--radius-lg);
     }
 
@@ -2800,20 +2799,14 @@
       <!-- Core Colors -->
       <div class="color-group">
         <h3 class="color-group-title">Core Colors</h3>
-        <p class="color-group-description">De essentiële merkkleurenGebruik Orange spaarzaam (max 1-2x per pagina), Clay als primaire werkkleur, en Charcoal voor alle bodytekst.</p>
+        <p class="color-group-description">De essentiële merkkleuren. Gebruik Orange spaarzaam als signature kleur (max 1-2x per pagina, alleen voor logo en CTA's), en Charcoal voor alle tekst.</p>
         <div class="color-grid">
           <div class="color-swatch">
             <div class="color-preview sacred" style="background: var(--core-orange);"></div>
             <div class="color-info">
               <div class="color-name">Orange</div>
               <div class="color-value">#e7602a</div>
-            </div>
-          </div>
-          <div class="color-swatch">
-            <div class="color-preview" style="background: var(--core-clay);"></div>
-            <div class="color-info">
-              <div class="color-name">Clay</div>
-              <div class="color-value">#b8886e</div>
+              <div class="color-description">Signature — Logo, 1 CTA per page, hero moments. NEVER backgrounds.</div>
             </div>
           </div>
           <div class="color-swatch">
@@ -2821,6 +2814,7 @@
             <div class="color-info">
               <div class="color-name">Charcoal</div>
               <div class="color-value">#2a2d31</div>
+              <div class="color-description">Foundation — ALL text (headings + body)</div>
             </div>
           </div>
           <div class="color-swatch">
@@ -2883,37 +2877,33 @@
         </div>
       </div>
 
-      <!-- Support Colors -->
+      <!-- Brand Colors -->
       <div class="color-group">
-        <h3 class="color-group-title">Support Colors</h3>
-        <p class="color-group-description">Aanvullende kleuren voor variatie en speciale toepassingen.</p>
+        <h3 class="color-group-title">Brand Colors</h3>
+        <p class="color-group-description">Secundaire merkkleuren voor accenten en variatie. Elk met een eigen karakter.</p>
         <div class="color-grid">
           <div class="color-swatch">
-            <div class="color-preview" style="background: var(--support-deep-clay);"></div>
+            <div class="color-preview" style="background: var(--brand-tobacco);"></div>
             <div class="color-info">
-              <div class="color-name">Deep Clay</div>
-              <div class="color-value">#9a6f58</div>
+              <div class="color-name">Tobacco</div>
+              <div class="color-value">#9a7b4f</div>
+              <div class="color-description">Warm, vintage, gold-tint</div>
             </div>
           </div>
           <div class="color-swatch">
-            <div class="color-preview" style="background: var(--support-burnt-sienna);"></div>
+            <div class="color-preview" style="background: var(--brand-slate-bronze);"></div>
             <div class="color-info">
-              <div class="color-name">Burnt Sienna</div>
-              <div class="color-value">#c87654</div>
+              <div class="color-name">Slate Bronze</div>
+              <div class="color-value">#7a6d5d</div>
+              <div class="color-description">Cool, architectural, Swiss precision</div>
             </div>
           </div>
           <div class="color-swatch">
-            <div class="color-preview" style="background: var(--support-sage);"></div>
+            <div class="color-preview" style="background: var(--brand-oxblood);"></div>
             <div class="color-info">
-              <div class="color-name">Sage</div>
-              <div class="color-value">#8a9b7e</div>
-            </div>
-          </div>
-          <div class="color-swatch">
-            <div class="color-preview" style="background: var(--support-steel-blue);"></div>
-            <div class="color-info">
-              <div class="color-name">Steel Blue</div>
-              <div class="color-value">#6b7d8f</div>
+              <div class="color-name">Oxblood</div>
+              <div class="color-value">#6b3a3a</div>
+              <div class="color-description">Bold, punk, memorable</div>
             </div>
           </div>
         </div>
@@ -2925,59 +2915,59 @@
         <p class="color-group-description">Warme, vintage-geïnspireerde palette voor workshops en creatieve projecten.</p>
         <div class="color-grid">
           <div class="color-swatch">
+            <div class="color-preview" style="background: var(--retro-mustard);"></div>
+            <div class="color-info">
+              <div class="color-name">Mustard</div>
+              <div class="color-value">#d4a03c</div>
+            </div>
+          </div>
+          <div class="color-swatch">
             <div class="color-preview" style="background: var(--retro-rust);"></div>
             <div class="color-info">
               <div class="color-name">Rust</div>
-              <div class="color-value">#c85a3e</div>
-            </div>
-          </div>
-          <div class="color-swatch">
-            <div class="color-preview" style="background: var(--retro-terracotta);"></div>
-            <div class="color-info">
-              <div class="color-name">Terracotta</div>
-              <div class="color-value">#d97a5a</div>
-            </div>
-          </div>
-          <div class="color-swatch">
-            <div class="color-preview" style="background: var(--retro-amber);"></div>
-            <div class="color-info">
-              <div class="color-name">Amber</div>
-              <div class="color-value">#e8a55c</div>
-            </div>
-          </div>
-          <div class="color-swatch">
-            <div class="color-preview" style="background: var(--retro-gold);"></div>
-            <div class="color-info">
-              <div class="color-name">Gold</div>
-              <div class="color-value">#d4b883</div>
+              <div class="color-value">#b8593b</div>
             </div>
           </div>
           <div class="color-swatch">
             <div class="color-preview" style="background: var(--retro-olive);"></div>
             <div class="color-info">
               <div class="color-name">Olive</div>
-              <div class="color-value">#a8a16b</div>
-            </div>
-          </div>
-          <div class="color-swatch">
-            <div class="color-preview" style="background: var(--retro-forest);"></div>
-            <div class="color-info">
-              <div class="color-name">Forest</div>
-              <div class="color-value">#6b8a5f</div>
+              <div class="color-value">#6b7c4c</div>
             </div>
           </div>
           <div class="color-swatch">
             <div class="color-preview" style="background: var(--retro-teal);"></div>
             <div class="color-info">
               <div class="color-name">Teal</div>
-              <div class="color-value">#5a8b8f</div>
+              <div class="color-value">#3d6b6b</div>
             </div>
           </div>
           <div class="color-swatch">
-            <div class="color-preview" style="background: var(--retro-slate);"></div>
+            <div class="color-preview" style="background: var(--retro-burgundy);"></div>
             <div class="color-info">
-              <div class="color-name">Slate</div>
-              <div class="color-value">#6d7c85</div>
+              <div class="color-name">Burgundy</div>
+              <div class="color-value">#7a3b4c</div>
+            </div>
+          </div>
+          <div class="color-swatch">
+            <div class="color-preview" style="background: var(--retro-gold);"></div>
+            <div class="color-info">
+              <div class="color-name">Gold</div>
+              <div class="color-value">#c9a961</div>
+            </div>
+          </div>
+          <div class="color-swatch">
+            <div class="color-preview" style="background: var(--retro-sage);"></div>
+            <div class="color-info">
+              <div class="color-name">Sage</div>
+              <div class="color-value">#8b9b7a</div>
+            </div>
+          </div>
+          <div class="color-swatch">
+            <div class="color-preview" style="background: var(--retro-terracotta);"></div>
+            <div class="color-info">
+              <div class="color-name">Terracotta</div>
+              <div class="color-value">#c67b5c</div>
             </div>
           </div>
         </div>
@@ -2989,59 +2979,59 @@
         <p class="color-group-description">Zachte, toegankelijke palette voor subtiele en vriendelijke toepassingen.</p>
         <div class="color-grid">
           <div class="color-swatch">
-            <div class="color-preview" style="background: var(--soft-coral);"></div>
+            <div class="color-preview" style="background: var(--soft-blush);"></div>
             <div class="color-info">
-              <div class="color-name">Coral</div>
-              <div class="color-value">#e8857a</div>
-            </div>
-          </div>
-          <div class="color-swatch">
-            <div class="color-preview" style="background: var(--soft-peach);"></div>
-            <div class="color-info">
-              <div class="color-name">Peach</div>
-              <div class="color-value">#f5b895</div>
-            </div>
-          </div>
-          <div class="color-swatch">
-            <div class="color-preview" style="background: var(--soft-apricot);"></div>
-            <div class="color-info">
-              <div class="color-name">Apricot</div>
-              <div class="color-value">#f0c78a</div>
-            </div>
-          </div>
-          <div class="color-swatch">
-            <div class="color-preview" style="background: var(--soft-sand);"></div>
-            <div class="color-info">
-              <div class="color-name">Sand</div>
-              <div class="color-value">#d9c9a3</div>
-            </div>
-          </div>
-          <div class="color-swatch">
-            <div class="color-preview" style="background: var(--soft-mint);"></div>
-            <div class="color-info">
-              <div class="color-name">Mint</div>
-              <div class="color-value">#b4c9b4</div>
-            </div>
-          </div>
-          <div class="color-swatch">
-            <div class="color-preview" style="background: var(--soft-seafoam);"></div>
-            <div class="color-info">
-              <div class="color-name">Seafoam</div>
-              <div class="color-value">#a5c4c4</div>
+              <div class="color-name">Blush</div>
+              <div class="color-value">#e8d5d0</div>
             </div>
           </div>
           <div class="color-swatch">
             <div class="color-preview" style="background: var(--soft-sky);"></div>
             <div class="color-info">
               <div class="color-name">Sky</div>
-              <div class="color-value">#9bb8cc</div>
+              <div class="color-value">#d0dde8</div>
             </div>
           </div>
           <div class="color-swatch">
-            <div class="color-preview" style="background: var(--soft-periwinkle);"></div>
+            <div class="color-preview" style="background: var(--soft-mint);"></div>
             <div class="color-info">
-              <div class="color-name">Periwinkle</div>
-              <div class="color-value">#a8b3cc</div>
+              <div class="color-name">Mint</div>
+              <div class="color-value">#d0e8d5</div>
+            </div>
+          </div>
+          <div class="color-swatch">
+            <div class="color-preview" style="background: var(--soft-lavender);"></div>
+            <div class="color-info">
+              <div class="color-name">Lavender</div>
+              <div class="color-value">#ddd0e8</div>
+            </div>
+          </div>
+          <div class="color-swatch">
+            <div class="color-preview" style="background: var(--soft-peach);"></div>
+            <div class="color-info">
+              <div class="color-name">Peach</div>
+              <div class="color-value">#e8ddd0</div>
+            </div>
+          </div>
+          <div class="color-swatch">
+            <div class="color-preview" style="background: var(--soft-seafoam);"></div>
+            <div class="color-info">
+              <div class="color-name">Seafoam</div>
+              <div class="color-value">#d0e8e5</div>
+            </div>
+          </div>
+          <div class="color-swatch">
+            <div class="color-preview" style="background: var(--soft-rose);"></div>
+            <div class="color-info">
+              <div class="color-name">Rose</div>
+              <div class="color-value">#e8d0dd</div>
+            </div>
+          </div>
+          <div class="color-swatch">
+            <div class="color-preview" style="background: var(--soft-cream);"></div>
+            <div class="color-info">
+              <div class="color-name">Cream</div>
+              <div class="color-value">#e8e5d0</div>
             </div>
           </div>
         </div>
@@ -3390,7 +3380,7 @@
               </div>
             </div>
             <div class="card">
-              <div class="card-image" style="background: linear-gradient(135deg, var(--core-clay), var(--support-deep-clay));"></div>
+              <div class="card-image" style="background: linear-gradient(135deg, var(--brand-tobacco), var(--brand-slate-bronze));"></div>
               <div class="card-body">
                 <span class="card-label">Workshop</span>
                 <h4 class="card-title">Design Sprint</h4>
@@ -3398,7 +3388,7 @@
               </div>
             </div>
             <div class="card">
-              <div class="card-image" style="background: linear-gradient(135deg, var(--retro-teal), var(--retro-forest));"></div>
+              <div class="card-image" style="background: linear-gradient(135deg, var(--retro-teal), var(--retro-olive));"></div>
               <div class="card-body">
                 <span class="card-label">Artikel</span>
                 <h4 class="card-title">De kracht van systemen</h4>
@@ -4049,7 +4039,7 @@
           <h3 class="color-group-title">Kenmerken</h3>
           <div class="photo-traits">
             <div class="trait-card">
-              <div class="trait-icon" style="background: var(--core-clay);">
+              <div class="trait-icon" style="background: var(--brand-tobacco);">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
                 </svg>
@@ -4058,7 +4048,7 @@
               <p class="trait-description">Gebruik natuurlijk, warm licht. Vermijd harde schaduwen en koude tinten.</p>
             </div>
             <div class="trait-card">
-              <div class="trait-icon" style="background: var(--support-sage);">
+              <div class="trait-icon" style="background: var(--retro-sage);">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                   <path fill-rule="evenodd" d="M4.5 12a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm6 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm6 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" clip-rule="evenodd" />
                 </svg>
@@ -4067,7 +4057,7 @@
               <p class="trait-description">Echte mensen, echte momenten. Geen overdreven poses of stockfoto-gevoel.</p>
             </div>
             <div class="trait-card">
-              <div class="trait-icon" style="background: var(--support-steel-blue);">
+              <div class="trait-icon" style="background: var(--retro-teal);">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                   <path fill-rule="evenodd" d="M2.25 4.125c0-1.036.84-1.875 1.875-1.875h5.25c1.036 0 1.875.84 1.875 1.875V17.25a4.5 4.5 0 11-9 0V4.125zm4.5 14.25a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" clip-rule="evenodd" />
                   <path d="M10.719 21.75h9.156c1.036 0 1.875-.84 1.875-1.875v-5.25c0-1.036-.84-1.875-1.875-1.875h-.14l-8.742 8.743c-.09.089-.18.175-.274.257z" />
@@ -4077,7 +4067,7 @@
               <p class="trait-description">Laat ademruimte in composities. Niet te druk, focus op het essentiële.</p>
             </div>
             <div class="trait-card">
-              <div class="trait-icon" style="background: var(--retro-amber);">
+              <div class="trait-icon" style="background: var(--retro-mustard);">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                   <path fill-rule="evenodd" d="M9.315 7.584C12.195 3.883 16.695 1.5 21.75 1.5a.75.75 0 01.75.75c0 5.056-2.383 9.555-6.084 12.436A6.75 6.75 0 019.75 22.5a.75.75 0 01-.75-.75v-4.131A15.838 15.838 0 016.382 15H2.25a.75.75 0 01-.75-.75 6.75 6.75 0 017.815-6.666zM15 6.75a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z" clip-rule="evenodd" />
                   <path d="M5.26 17.242a.75.75 0 10-.897-1.203 5.243 5.243 0 00-2.05 5.022.75.75 0 00.625.627 5.243 5.243 0 005.022-2.051.75.75 0 10-1.202-.897 3.744 3.744 0 01-3.008 1.51c0-1.23.592-2.323 1.51-3.008z" />
