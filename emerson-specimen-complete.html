@@ -295,7 +295,103 @@
       letter-spacing: 0.08em;
       color: var(--taupe-500);
     }
-    
+
+    /* ========================================
+       RESPONSIVE TYPOGRAPHY SHOWCASE
+       ======================================== */
+
+    .type-scale-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 32px;
+    }
+
+    .type-scale-column {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 2px 12px rgba(42,45,49,0.06);
+    }
+
+    .type-scale-header {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--taupe-200);
+    }
+
+    .type-scale-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--taupe-100);
+    }
+
+    .type-scale-item:last-child {
+      border-bottom: none;
+    }
+
+    .type-scale-name {
+      font-family: var(--font-heading);
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--charcoal);
+    }
+
+    .type-scale-value {
+      font-family: 'SF Mono', Monaco, monospace;
+      font-size: 13px;
+      color: var(--taupe-500);
+    }
+
+    .special-media-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .special-media-card {
+      background: var(--white);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(42,45,49,0.06);
+    }
+
+    .special-media-header {
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .special-media-content {
+      padding: 20px;
+    }
+
+    @media (max-width: 1024px) {
+      .type-scale-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .special-media-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .type-scale-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .special-media-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
     /* ========================================
        COLOR SYSTEM
        ======================================== */
@@ -1079,10 +1175,10 @@
        ========================================== -->
   <section class="hero">
     <div class="container">
-      <p class="hero-overline">Emerson Agency — Brand Specimen v2.0</p>
+      <p class="hero-overline">Emerson Agency — Brand Specimen v2.1</p>
       <h1 class="hero-title">Trust thyself: every heart vibrates to that iron string.</h1>
       <p class="hero-subtitle">Een complete showcase van het Emerson Agency design system, geïllustreerd met het werk van Ralph Waldo Emerson — de naamgever van het bureau.</p>
-      <p class="hero-meta"><span>December 2024</span> · Typography · Colors · Applications</p>
+      <p class="hero-meta"><span>December 2024</span> · Typography · Responsive Scales · Colors · Applications</p>
     </div>
   </section>
 
@@ -1098,38 +1194,38 @@
       <!-- Hero Display -->
       <div class="type-sample">
         <div class="type-meta">
-          <span class="type-tag primary">H1 Hero</span>
-          <span class="type-tag">72px</span>
+          <span class="type-tag primary">Hero</span>
+          <span class="type-tag">72px/79</span>
           <span class="type-tag">Work Sans Light</span>
         </div>
         <p class="display-hero">The only person you are destined to become is the person you decide to be.</p>
       </div>
-      
+
       <!-- H1 -->
       <div class="type-sample">
         <div class="type-meta">
           <span class="type-tag primary">H1</span>
-          <span class="type-tag">48px</span>
+          <span class="type-tag">48px/60</span>
           <span class="type-tag">Work Sans Light</span>
         </div>
         <p class="display-h1">What lies behind us and what lies before us are tiny matters compared to what lies within us.</p>
       </div>
-      
+
       <!-- H2 -->
       <div class="type-sample">
         <div class="type-meta">
           <span class="type-tag primary">H2</span>
-          <span class="type-tag">36px</span>
+          <span class="type-tag">36px/45</span>
           <span class="type-tag">Work Sans Light</span>
         </div>
         <p class="display-h2">Do not go where the path may lead, go instead where there is no path and leave a trail.</p>
       </div>
-      
+
       <!-- H3 -->
       <div class="type-sample">
         <div class="type-meta">
           <span class="type-tag primary">H3</span>
-          <span class="type-tag">28px</span>
+          <span class="type-tag">28px/35</span>
           <span class="type-tag">Work Sans Light</span>
         </div>
         <p class="display-h3">The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate.</p>
@@ -1139,7 +1235,7 @@
       <div class="type-sample">
         <div class="type-meta">
           <span class="type-tag primary">H4</span>
-          <span class="type-tag">22px</span>
+          <span class="type-tag">22px/33</span>
           <span class="type-tag">Work Sans Regular</span>
         </div>
         <p class="display-h4">For every minute you are angry you lose sixty seconds of happiness.</p>
@@ -1151,52 +1247,203 @@
       <div class="type-sample">
         <div class="type-meta">
           <span class="type-tag primary">Body Large</span>
-          <span class="type-tag">20px</span>
+          <span class="type-tag">20px/34</span>
           <span class="type-tag">IBM Plex Sans</span>
         </div>
         <p class="body-large">A man is what he thinks about all day long. The mind, once stretched by a new idea, never returns to its original dimensions. We are always getting ready to live but never living.</p>
       </div>
-      
+
       <!-- Body Regular -->
       <div class="type-sample">
         <div class="type-meta">
           <span class="type-tag primary">Body</span>
-          <span class="type-tag">17px</span>
+          <span class="type-tag">17px/29</span>
           <span class="type-tag">IBM Plex Sans</span>
         </div>
         <p class="body-regular">To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment. It is easy in the world to live after the world's opinion; it is easy in solitude to live after our own; but the great man is he who in the midst of the crowd keeps with perfect sweetness the independence of solitude.</p>
       </div>
-      
+
       <!-- Body Small -->
       <div class="type-sample">
         <div class="type-meta">
           <span class="type-tag primary">Body Small</span>
-          <span class="type-tag">15px</span>
+          <span class="type-tag">15px/23</span>
           <span class="type-tag">IBM Plex Sans</span>
         </div>
         <p class="body-small">Write it on your heart that every day is the best day in the year. He is rich who owns the day, and no one owns the day who allows it to be invaded with fret and anxiety. Finish every day and be done with it. You have done what you could.</p>
       </div>
-      
+
       <!-- Caption -->
       <div class="type-sample">
         <div class="type-meta">
           <span class="type-tag primary">Caption</span>
-          <span class="type-tag">14px Italic</span>
+          <span class="type-tag">14px/21</span>
           <span class="type-tag">IBM Plex Sans</span>
-          <span class="type-tag">Taupe-700</span>
         </div>
         <p class="caption">Ralph Waldo Emerson (1803–1882) was een Amerikaans essayist, dichter en filosoof die de Transcendentalist beweging leidde in het midden van de 19e eeuw.</p>
       </div>
-      
+
       <!-- Label -->
       <div class="type-sample">
         <div class="type-meta">
           <span class="type-tag primary">Label</span>
-          <span class="type-tag">12px Medium</span>
-          <span class="type-tag">Work Sans</span>
+          <span class="type-tag">12px/18</span>
+          <span class="type-tag">Work Sans Medium</span>
           <span class="type-tag">Uppercase</span>
         </div>
         <p class="label">Self-Reliance · Nature · The Over-Soul · Circles · Experience</p>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- RESPONSIVE TYPOGRAPHY SECTION -->
+      <p class="section-label" style="margin-top: 48px;">Responsive Typography</p>
+      <h3 class="section-title">Typografie per Medium</h3>
+      <p class="section-intro">Het design system bevat optimale typografie-instellingen voor verschillende contexten en devices.</p>
+
+      <!-- Typography Scale Comparison -->
+      <div class="type-scale-grid">
+        <!-- Desktop -->
+        <div class="type-scale-column">
+          <div class="type-scale-header">
+            <span class="type-tag primary">Desktop</span>
+            <span class="type-tag">1200px+</span>
+          </div>
+          <div class="type-scale-item">
+            <span class="type-scale-name">Hero</span>
+            <span class="type-scale-value">72/79</span>
+          </div>
+          <div class="type-scale-item">
+            <span class="type-scale-name">H1</span>
+            <span class="type-scale-value">48/60</span>
+          </div>
+          <div class="type-scale-item">
+            <span class="type-scale-name">H2</span>
+            <span class="type-scale-value">36/45</span>
+          </div>
+          <div class="type-scale-item">
+            <span class="type-scale-name">H3</span>
+            <span class="type-scale-value">28/35</span>
+          </div>
+          <div class="type-scale-item">
+            <span class="type-scale-name">H4</span>
+            <span class="type-scale-value">22/33</span>
+          </div>
+          <div class="type-scale-item">
+            <span class="type-scale-name">Body</span>
+            <span class="type-scale-value">17/29</span>
+          </div>
+        </div>
+
+        <!-- Tablet -->
+        <div class="type-scale-column">
+          <div class="type-scale-header">
+            <span class="type-tag primary">Tablet</span>
+            <span class="type-tag">768px</span>
+          </div>
+          <div class="type-scale-item">
+            <span class="type-scale-name">Hero</span>
+            <span class="type-scale-value">56/62</span>
+          </div>
+          <div class="type-scale-item">
+            <span class="type-scale-name">H1</span>
+            <span class="type-scale-value">40/50</span>
+          </div>
+          <div class="type-scale-item">
+            <span class="type-scale-name">H2</span>
+            <span class="type-scale-value">32/40</span>
+          </div>
+          <div class="type-scale-item">
+            <span class="type-scale-name">H3</span>
+            <span class="type-scale-value">24/30</span>
+          </div>
+          <div class="type-scale-item">
+            <span class="type-scale-name">H4</span>
+            <span class="type-scale-value">20/30</span>
+          </div>
+          <div class="type-scale-item">
+            <span class="type-scale-name">Body</span>
+            <span class="type-scale-value">16/27</span>
+          </div>
+        </div>
+
+        <!-- Mobile -->
+        <div class="type-scale-column">
+          <div class="type-scale-header">
+            <span class="type-tag primary">Mobile</span>
+            <span class="type-tag">375px</span>
+          </div>
+          <div class="type-scale-item">
+            <span class="type-scale-name">Hero</span>
+            <span class="type-scale-value">40/44</span>
+          </div>
+          <div class="type-scale-item">
+            <span class="type-scale-name">H1</span>
+            <span class="type-scale-value">32/40</span>
+          </div>
+          <div class="type-scale-item">
+            <span class="type-scale-name">H2</span>
+            <span class="type-scale-value">26/33</span>
+          </div>
+          <div class="type-scale-item">
+            <span class="type-scale-name">H3</span>
+            <span class="type-scale-value">22/28</span>
+          </div>
+          <div class="type-scale-item">
+            <span class="type-scale-name">H4</span>
+            <span class="type-scale-value">18/27</span>
+          </div>
+          <div class="type-scale-item">
+            <span class="type-scale-name">Body</span>
+            <span class="type-scale-value">16/27</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Special Media Typography -->
+      <h3 class="display-h4" style="margin-bottom: 32px;">Speciale Media Formaten</h3>
+
+      <div class="special-media-grid">
+        <!-- Print -->
+        <div class="special-media-card">
+          <div class="special-media-header" style="background: var(--taupe-200);">
+            <span class="type-tag primary">Print</span>
+            <span style="font-size: 13px; color: var(--taupe-700);">A4 / Letter</span>
+          </div>
+          <div class="special-media-content">
+            <p class="special-media-example" style="font-family: var(--font-heading); font-weight: 300; font-size: 24px; line-height: 1.2; margin-bottom: 12px;">H1: 36pt/43pt</p>
+            <p class="special-media-example" style="font-family: var(--font-body); font-size: 14px; line-height: 1.45; color: var(--taupe-700); margin-bottom: 8px;">Body: 11pt/16pt — optimaal voor gedrukte tekst op papier.</p>
+            <p style="font-family: var(--font-body); font-size: 10px; color: var(--taupe-500);">Caption: 8pt · Label: 7pt uppercase</p>
+          </div>
+        </div>
+
+        <!-- Presentation -->
+        <div class="special-media-card">
+          <div class="special-media-header" style="background: var(--charcoal); color: var(--white);">
+            <span class="type-tag" style="background: var(--orange); color: var(--white);">Presentation</span>
+            <span style="font-size: 13px; color: var(--taupe-200);">1920×1080</span>
+          </div>
+          <div class="special-media-content">
+            <p class="special-media-example" style="font-family: var(--font-heading); font-weight: 300; font-size: 32px; line-height: 1.1; margin-bottom: 12px;">Hero: 120/132</p>
+            <p class="special-media-example" style="font-family: var(--font-body); font-size: 16px; line-height: 1.5; color: var(--taupe-700); margin-bottom: 8px;">Body: 28/42 — leesbaar op afstand.</p>
+            <p style="font-family: var(--font-body); font-size: 12px; color: var(--taupe-500);">Caption: 20pt · Label: 18pt uppercase</p>
+          </div>
+        </div>
+
+        <!-- Social Media -->
+        <div class="special-media-card">
+          <div class="special-media-header" style="background: linear-gradient(135deg, var(--retro-rust), var(--orange));">
+            <span class="type-tag" style="background: var(--white); color: var(--charcoal);">Social</span>
+            <span style="font-size: 13px; color: var(--white);">Instagram / LinkedIn</span>
+          </div>
+          <div class="special-media-content">
+            <p class="special-media-example" style="font-family: var(--font-heading); font-weight: 300; font-size: 28px; line-height: 1.1; margin-bottom: 12px;">Headline: 64/70</p>
+            <p class="special-media-example" style="font-family: var(--font-body); font-size: 16px; line-height: 1.5; color: var(--taupe-700); margin-bottom: 8px;">Body: 28/42 — bold impact.</p>
+            <p style="font-family: var(--font-body); font-size: 12px; color: var(--taupe-500);">Subhead: 36/43 · Label: 20pt uppercase</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -1691,7 +1938,7 @@
       
       <div class="footer-bottom">
         <p class="footer-copyright">© 2024 Emerson Agency. Inspired by Ralph Waldo Emerson.</p>
-        <p class="footer-version">Brand Specimen v2.0 · December 2024</p>
+        <p class="footer-version">Brand Specimen v2.1 · December 2024 · Multi-media Typography</p>
       </div>
     </div>
   </footer>
