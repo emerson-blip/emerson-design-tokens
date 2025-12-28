@@ -393,6 +393,196 @@
     }
 
     /* ========================================
+       TABLE STYLES
+       ======================================== */
+
+    .table-section {
+      padding: 80px 0;
+    }
+
+    .table-wrapper {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(42,45,49,0.08);
+      margin-bottom: 48px;
+    }
+
+    .table-wrapper:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Base Table */
+    .emerson-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: var(--font-body);
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .emerson-table caption {
+      font-family: var(--font-body);
+      font-size: 13px;
+      color: var(--taupe-500);
+      text-align: left;
+      padding: 12px 0;
+      caption-side: bottom;
+    }
+
+    /* Header */
+    .emerson-table thead {
+      background: var(--charcoal);
+    }
+
+    .emerson-table th {
+      font-family: var(--font-heading);
+      font-size: 13px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--white);
+      text-align: left;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--taupe-200);
+    }
+
+    .emerson-table th.text-right {
+      text-align: right;
+    }
+
+    .emerson-table th.text-center {
+      text-align: center;
+    }
+
+    /* Cells */
+    .emerson-table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--taupe-200);
+      color: var(--charcoal);
+      vertical-align: middle;
+    }
+
+    .emerson-table td.text-right {
+      text-align: right;
+    }
+
+    .emerson-table td.text-center {
+      text-align: center;
+    }
+
+    .emerson-table td.text-muted {
+      color: var(--taupe-700);
+    }
+
+    .emerson-table td.font-medium {
+      font-weight: 500;
+    }
+
+    .emerson-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Zebra Striping */
+    .emerson-table.striped tbody tr:nth-child(even) {
+      background: var(--taupe-50);
+    }
+
+    /* Hover State */
+    .emerson-table.hoverable tbody tr:hover {
+      background: var(--taupe-100);
+    }
+
+    /* Footer */
+    .emerson-table tfoot {
+      background: var(--taupe-50);
+    }
+
+    .emerson-table tfoot td {
+      font-weight: 500;
+      border-top: 2px solid var(--taupe-200);
+      border-bottom: none;
+    }
+
+    /* Status Badges */
+    .status-badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 500;
+      font-family: var(--font-heading);
+    }
+
+    .status-badge.success {
+      background: var(--soft-mint);
+      color: #3d5c3d;
+    }
+
+    .status-badge.warning {
+      background: var(--soft-peach);
+      color: #8b6914;
+    }
+
+    .status-badge.error {
+      background: var(--soft-blush);
+      color: var(--oxblood);
+    }
+
+    .status-badge.info {
+      background: var(--soft-sky);
+      color: #3d5c6b;
+    }
+
+    /* Compact Variant */
+    .emerson-table.compact th,
+    .emerson-table.compact td {
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+
+    /* Comfortable Variant */
+    .emerson-table.comfortable th,
+    .emerson-table.comfortable td {
+      padding: 16px 20px;
+    }
+
+    /* Spacious Variant */
+    .emerson-table.spacious th,
+    .emerson-table.spacious td {
+      padding: 20px 24px;
+      font-size: 16px;
+    }
+
+    /* Light Header Variant */
+    .emerson-table.light-header thead {
+      background: var(--taupe-100);
+    }
+
+    .emerson-table.light-header th {
+      color: var(--charcoal);
+    }
+
+    /* Borderless Variant */
+    .emerson-table.borderless td,
+    .emerson-table.borderless th {
+      border: none;
+    }
+
+    /* Responsive Table */
+    .table-responsive {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    @media (max-width: 768px) {
+      .emerson-table th,
+      .emerson-table td {
+        padding: 10px 12px;
+        font-size: 14px;
+      }
+    }
+
+    /* ========================================
        COLOR SYSTEM
        ======================================== */
     
@@ -1596,6 +1786,167 @@
           <div class="color-strip-item light-text" style="background: var(--soft-rose);">#e8d0dd</div>
           <div class="color-strip-item light-text" style="background: var(--soft-cream);">#e8e5d0</div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       TABLE COMPONENTS
+       ========================================== -->
+  <section class="table-section" style="background: var(--taupe-50);">
+    <div class="container">
+      <p class="section-label">Data Tables</p>
+      <h2 class="section-title">Tabel Componenten</h2>
+      <p class="section-intro">Gestructureerde data weergave met verschillende varianten voor diverse contexten.</p>
+
+      <!-- Default Table with Striping -->
+      <h3 class="display-h4" style="margin-bottom: 20px;">Default Table (Striped + Hoverable)</h3>
+      <div class="table-wrapper">
+        <table class="emerson-table striped hoverable">
+          <thead>
+            <tr>
+              <th>Essay</th>
+              <th>Jaar</th>
+              <th>Collectie</th>
+              <th class="text-right">Pagina's</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="font-medium">Self-Reliance</td>
+              <td>1841</td>
+              <td class="text-muted">Essays: First Series</td>
+              <td class="text-right">32</td>
+              <td><span class="status-badge success">Gepubliceerd</span></td>
+            </tr>
+            <tr>
+              <td class="font-medium">Nature</td>
+              <td>1836</td>
+              <td class="text-muted">Standalone</td>
+              <td class="text-right">48</td>
+              <td><span class="status-badge success">Gepubliceerd</span></td>
+            </tr>
+            <tr>
+              <td class="font-medium">The Over-Soul</td>
+              <td>1841</td>
+              <td class="text-muted">Essays: First Series</td>
+              <td class="text-right">24</td>
+              <td><span class="status-badge success">Gepubliceerd</span></td>
+            </tr>
+            <tr>
+              <td class="font-medium">Experience</td>
+              <td>1844</td>
+              <td class="text-muted">Essays: Second Series</td>
+              <td class="text-right">28</td>
+              <td><span class="status-badge info">In revisie</span></td>
+            </tr>
+            <tr>
+              <td class="font-medium">Circles</td>
+              <td>1841</td>
+              <td class="text-muted">Essays: First Series</td>
+              <td class="text-right">18</td>
+              <td><span class="status-badge warning">Concept</span></td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Totaal: 5 essays</td>
+              <td class="text-right">150</td>
+              <td></td>
+            </tr>
+          </tfoot>
+          <caption>Overzicht van Emerson's belangrijkste essays uit de Transcendentalist periode.</caption>
+        </table>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Compact Table -->
+      <h3 class="display-h4" style="margin-bottom: 20px;">Compact Variant</h3>
+      <p class="body-small" style="margin-bottom: 16px; color: var(--taupe-700);">Kleinere padding voor data-intensieve weergaven.</p>
+      <div class="table-wrapper">
+        <table class="emerson-table compact striped">
+          <thead>
+            <tr>
+              <th>Token</th>
+              <th>Waarde</th>
+              <th>Type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="font-medium">color.core.orange</td>
+              <td><code style="background: var(--taupe-100); padding: 2px 6px; border-radius: 3px; font-size: 13px;">#e7602a</code></td>
+              <td class="text-muted">color</td>
+            </tr>
+            <tr>
+              <td class="font-medium">color.core.charcoal</td>
+              <td><code style="background: var(--taupe-100); padding: 2px 6px; border-radius: 3px; font-size: 13px;">#2a2d31</code></td>
+              <td class="text-muted">color</td>
+            </tr>
+            <tr>
+              <td class="font-medium">spacing.4</td>
+              <td><code style="background: var(--taupe-100); padding: 2px 6px; border-radius: 3px; font-size: 13px;">16px</code></td>
+              <td class="text-muted">spacing</td>
+            </tr>
+            <tr>
+              <td class="font-medium">borderRadius.lg</td>
+              <td><code style="background: var(--taupe-100); padding: 2px 6px; border-radius: 3px; font-size: 13px;">8px</code></td>
+              <td class="text-muted">borderRadius</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Light Header Variant -->
+      <h3 class="display-h4" style="margin-bottom: 20px;">Light Header Variant</h3>
+      <p class="body-small" style="margin-bottom: 16px; color: var(--taupe-700);">Subtielere header voor minder prominente tabellen.</p>
+      <div class="table-wrapper">
+        <table class="emerson-table light-header comfortable hoverable">
+          <thead>
+            <tr>
+              <th>Archetype</th>
+              <th>Kernwaarde</th>
+              <th>Toepassing</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="font-medium">The Architect</td>
+              <td>Structuur & Systeem</td>
+              <td class="text-muted">Design Systems, Information Architecture</td>
+            </tr>
+            <tr>
+              <td class="font-medium">The Guide</td>
+              <td>Wijsheid & Richting</td>
+              <td class="text-muted">Workshops, Consultancy</td>
+            </tr>
+            <tr>
+              <td class="font-medium">The Philosopher</td>
+              <td>Diepgang & Reflectie</td>
+              <td class="text-muted">Strategy, Research</td>
+            </tr>
+            <tr>
+              <td class="font-medium">The Catalyst</td>
+              <td>Verandering & Actie</td>
+              <td class="text-muted">Transformation, Implementation</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Status Badges Overview -->
+      <h3 class="display-h4" style="margin-bottom: 20px;">Status Badges</h3>
+      <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+        <span class="status-badge success">Success</span>
+        <span class="status-badge warning">Warning</span>
+        <span class="status-badge error">Error</span>
+        <span class="status-badge info">Info</span>
       </div>
     </div>
   </section>

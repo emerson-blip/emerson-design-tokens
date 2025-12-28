@@ -15,5 +15,25 @@
     "tokens-studio"
   ],
   "author": "Emerson Agency",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "style-dictionary build --config sd.config.js",
+    "build:css": "style-dictionary build --config sd.config.js --platform css",
+    "build:scss": "style-dictionary build --config sd.config.js --platform scss",
+    "build:js": "style-dictionary build --config sd.config.js --platform js",
+    "clean": "rm -rf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emerson-blip/emerson-design-tokens.git"
+  },
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/emerson-blip/emerson-design-tokens/issues"
+  },
+  "homepage": "https://github.com/emerson-blip/emerson-design-tokens#readme",
+  "devDependencies": {
+    "@tokens-studio/sd-transforms": "^2.0.3",
+    "style-dictionary": "^5.1.1"
+  }
 }
